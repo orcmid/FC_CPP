@@ -5,7 +5,7 @@ FC_CPP.txt 0.0.1                    UTF-8                         2021-10-08
               ================================================
 
                      <https://github.com/orcmid/FC_CPP>
-          <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
+           <https://github.com/orcmid/FC_CPP/blob/main/FC_CPP.txt>
 
                        ORCMID'S PROGRAMMING ASSIGNMENTS
                        --------------------------------
