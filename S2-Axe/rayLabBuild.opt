@@ -1,0 +1,2 @@
+/utf-8 /validate-charset /TC /EHsc
+/std:c17 /Wall /sdl /O2 /GF /favor:blend /MT

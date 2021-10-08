@@ -1,0 +1,79 @@
+app.txt 0.0.2                       UTF-8                         2021-09-29
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                         Native Windows raylib Laboratory
+                         ================================
+
+
+<https://github.com/orcmid/rayLab/blob/master/projects/scripts/rawVC/app.txt>
+
+            EXPLORATION OF RAYLAB USAGE IN NATIVE WINDOWS APPS
+
+                          RAWvc XCOPY APP FOLDER
+                          ----------------------
+
+    The raylib/projects/scripts/rawVC/app/ folder is a standard subfolder for
+    a command-line build in the parent (e.g., rawCL) folder.  app/ contents
+    consist of the compiled .exe and any companion files/folders that are
+    required for usage of the executable program.
+
+    Although the materials may be persistent, they are also excluded from any
+    git repository, since they are not part of a contribution to any clone
+    in which app/ is part of a construction set such as rawVC.
+
+    The folder is amenable to XCopy deployment, or potential use in creating
+    an MSIX distributable.  The app/ folder should be amenable to Zipping up,
+    possibly after renaming the app.exe, and removing some scaffolding
+    files.  Addition of a README and other user-supporting materials would be
+    handy.
+
+MANIFEST
+
+    app.txt
+        this manifest and job-jar file
+    .gitignore
+        excluding user-specific compilations from a cloned repository
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. rawVC XCopy App Folder.  rayLab project
+   text file app.txt version 0.0.2 dated 2021-09-29, available on the
+   Internet as a version of
+   <https://github.com/orcmid/rayLab/blob/master/projects/scripts/rawVC/app/app.txt>
+
+TODO
+
+  * Confirm that executable can be created when compilation is in a sister
+    folder.  Something like /Fe..\app\app.exe
+
+  * Determine what the context of options and command line parameters is
+    (more under wrk.txt and also toolcraft)
+
+  * Add a NOTICE.txt that acknowledges development and construction.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.2 2021-09-29T18:17Z Reflect change from rawCL/ to rawVC/.
+ 0.0.1 2021-09-28T14:15Z touch-up, manage TODOs
+ 0.0.0 2021-09-27T23:42Z placeholder for native-build intermediate materials
+
+
+                          ***** end of app.txt *****
