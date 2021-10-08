@@ -1,20 +1,62 @@
-FC_CPP.txt 0.0.0                    UTF-8                         2021-10-07
+FC_CPP.txt 0.0.1                    UTF-8                         2021-10-08
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                   C++ Fundamentals: Game Programming for Beginners
-                   ================================================
+              C++ Fundamentals: Game Programming for Beginners
+              ================================================
 
-                       <https://github.com/orcmid/FC_CPP>
+                     <https://github.com/orcmid/FC_CPP>
           <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
 
                        ORCMID'S PROGRAMMING ASSIGNMENTS
                        --------------------------------
 
-    [Synopsis TBD]
+    These are Native VC/C++ solutions to the programming assignments in
+    the Udemy course, "C++ Fundamentals: Game Programming for Beginners,"
+    <https://www.udemy.com/course/cpp-fundamentals/>.
+
+    I started when the course was announced and I was dismayed by the lack
+    of on-ramp and guard rails for beginners.  I also felt that unification
+    around MingW as part of raylib install was suboptimal for studentw who
+    might benefit more with a simpler use of Microsoft VS Build Tools and
+    the native compiler, cl.exe.  I am focused on the Windows case.
+
+    This private repository is where I work out those solutions and support
+    public nfoTools provisions for understanding the tools and simple ways
+    of operating with them.  The raylib project provides support for this
+    avenue.
 
 MANIFEST
 
-    [TBD]
+    FC_CPP.txt
+        this synopsis, manifest, and job jar
+    README.md
+        typical for GitHub projects, a simple placeholder in this case
+
+    S1-FirstProgram/
+        A version of the first program, as C since no CPP features are
+        required
+
+    S2-Axe/
+        The second program, the first to employ raylib
+
+    raylib/
+        The installed raylib-3.7.0 files accessed as a library of code
+        for its graphical functions
+    raylib-3.7.0.zip
+        The zip from which raylib-3.7.0/ was extracted and renamed so it is
+        easy to slip in a later version.
+
+    LICENSE.txt
+        the Apache License is not so relevant here, but I want to demonstrate
+        the practice
+
+    .gitatttibutes
+        used to differentiate text and binary file formats for reliable
+        sharing across platforms via Git
+    .gitignore
+        used to eliminate locally-specific materials from the Git, keeping
+        clones from polluting the main shared GitHub repository
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -37,7 +79,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Orcmid's Programming Assignments.  FC_CPP project
-   text file FC_CPP.txt version 0.0.0 dated 2021-10-08, available on the
+   text file FC_CPP.txt version 0.0.1 dated 2021-10-08, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
 
@@ -47,13 +89,23 @@ TODO
 
   * Complete the .gitattributes and .gitignore for here
 
-   * Setup S1 and S2 programming assignments and their organization.
+  * Setup S1 and S2 programming assignments and their organization.
 
   * For S2, use a rawVC variant and refine its usage.
+
+  * Link to VS Build Tools installation
+
+  * Link to Developer Command Prompt
+
+  * Link to creation of shortcuts
+
+  * Have background and links for the S1 and S2 folios, prrerquisities,
+    and the tools involved
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.1 2021-10-08T20:42Z Bring current
  0.0.0 2021-10-08T01:57Z Placeholder
 
 
