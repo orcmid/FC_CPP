@@ -1,0 +1,60 @@
+FC_CPP.txt 0.0.0                    UTF-8                         2021-10-07
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                   C++ Fundamentals: Game Programming for Beginners
+                   ================================================
+
+                       <https://github.com/orcmid/FC_CPP>
+          <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
+
+                       ORCMID'S PROGRAMMING ASSIGNMENTS
+                       --------------------------------
+
+    [Synopsis TBD]
+
+MANIFEST
+
+    [TBD]
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Orcmid's Programming Assignments.  FC_CPP project
+   text file FC_CPP.txt version 0.0.0 dated 2021-10-08, available on the
+   Internet as a version of
+   <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
+
+TODO
+
+  * Complete the scaffolding down from here.
+
+  * Complete the .gitattributes and .gitignore for here
+
+   * Setup S1 and S2 programming assignments and their organization.
+
+  * For S2, use a rawVC variant and refine its usage.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+ 0.0.0 2021-10-08T01:57Z Placeholder
+
+
+                      ***** end of FC_CPP.txt *****
