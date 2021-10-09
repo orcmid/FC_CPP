@@ -1,4 +1,4 @@
-FC_CPP.txt 0.0.1                    UTF-8                         2021-10-08
+FC_CPP.txt 0.0.2                    UTF-8                         2021-10-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -18,12 +18,21 @@ FC_CPP.txt 0.0.1                    UTF-8                         2021-10-08
     of on-ramp and guard rails for beginners.  I also felt that unification
     around MingW as part of raylib install was suboptimal for studentw who
     might benefit more with a simpler use of Microsoft VS Build Tools and
-    the native compiler, cl.exe.  I am focused on the Windows case.
+    the native compiler, cl.exe.  I don't see CMake and Visual Code workspaces
+    as appropriate starting points.  There is too much mystery without any
+    foundation.
+
+    I am committed to Windows and VS Build Tools case.  I might consider
+    alternative use of raylib on and for other platforms as opportunities
+    become evident.  The priority is for Windows and the enormous population
+    of potentially-curious learners.
 
     This private repository is where I work out those solutions and support
     public nfoTools provisions for understanding the tools and simple ways
-    of operating with them.  The raylib project provides support for this
-    avenue.
+    of operating with them.  There are supporting provisions in the raylib
+    project that allows for a simpler and ideally more-informative on-ramp.
+    I would rather make similar demonstrations of raylib usage independent
+    of FC_CPP and keep this confirmation of VC usage as a private effort.
 
 MANIFEST
 
@@ -37,7 +46,8 @@ MANIFEST
         required
 
     S2-Axe/
-        The second program, the first to employ raylib
+        The second program, the first to employ raylib, still all in standard
+        C 2011 (std:c11) for consistency with raylib itself
 
     raylib/
         The installed raylib-3.7.0 files accessed as a library of code
@@ -102,10 +112,27 @@ TODO
 
   * Have background and links for the S1 and S2 folios, prrerquisities,
     and the tools involved
+    ** Command Prompt
+    ** VS Code
+    ** VC command line environment
+    ** the Command Prompt edit, save, compile, run/test, rinse repeat.
+    ** other skill identifications, appealing to nfoTools materials and
+       linked resources
+
+  * There is no reason that this couldn't be extended to MingW and also
+    to *nix including WSL.  We can look at that for opportunistic options.
+    I am less certain about Apple and MacOS.
+
+  * Point out that this effort is on Windows first and similar arrangements
+    on *nix only where there are harmonious equivalents.
+
+  * Add a NOTICE.txt out of consistency and a practice that I would encourage
+    in any public repository.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.2 2021-10-09T16:44Z Add TODOs, clarify emphasis and motivation
  0.0.1 2021-10-08T20:45Z Bring current
  0.0.0 2021-10-08T01:57Z Placeholder
 

@@ -1,0 +1,82 @@
+S2-Axe.txt 0.0.0                    UTF-8                         2021-10-08
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+              C++ Fundamentals: Game Programming for Beginners
+              ================================================
+
+                     <https://github.com/orcmid/FC_CPP>
+        <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/S2-Axe.txt>
+
+                       AXE GAME WITH NATIVE VC BUILDS
+                       ------------------------------
+
+    These are Native VC/C++ solutions to the programming assignments in
+    the Udemy course, "C++ Fundamentals: Game Programming for Beginners,"
+    <https://www.udemy.com/course/cpp-fundamentals/>.
+
+    This little subproject is for the Axe Game, the initial use of raylib
+    for graphic operations.  The stages are as follows.
+
+MANIFEST
+
+    S2-Axe.txt
+        this synopsis, manifest, and job jar file
+
+    axe_game.c
+        the source code as it is evolved in various steps
+
+    [more TBD]
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. S2.  Axe Game with Native VC Builds. FC_CPP Project
+   text file S2-Axe.txt version 0.0.0 dated 2021-10-08, available on the
+   Internet as a version of
+   <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/S2-Axe.txt>
+
+TODO
+
+  * Make nots on this section of the class.
+
+  * For S2, use a rawVC variant and refine its usage.
+
+  * Link to VS Build Tools installation
+
+  * Link to Developer Command Prompt
+
+  * Link to creation of shortcuts
+
+  * Have background and links for the S1 and S2 folios, prrerquisities,
+    and the tools involved
+
+  * Explain the edit, build, review, run/test cyle and how we can itterate
+    with the command prompt and an editor such as Visual Studio Code.
+
+  * Make notes in Obsidian on the lecturs of this section.  This is pretty
+    awful.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+ 0.0.0 2021-10-08T23:24Z Placeholder draft
+
+
+                      ***** end of S2-Axe.txt *****
