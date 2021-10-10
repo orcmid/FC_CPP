@@ -1,0 +1,136 @@
+S1-FirstProgram.txt 0.0.0           UTF-8                         2021-10-10
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+              C++ Fundamentals: Game Programming for Beginners
+              ================================================
+
+                     <https://github.com/orcmid/FC_CPP>
+        <https://github.com/orcmid/FC_CPP/blob/main/FC_CPP/S1-FirstProgram/S1-FirstProgram.txt>
+
+            BUILDING THE FC_CPP FIRST PROGRAM WITH VC NATIVE TOOLS
+            ------------------------------------------------------
+
+    This is a  Native VC/C++ solution to the first programming assignmens in
+    the Udemy course, "C++ Fundamentals: Game Programming for Beginners,"
+    <https://www.udemy.com/course/cpp-fundamentals/>.
+
+    There is minimal use of freely-available tools as part of a first exposure
+    and demonstration of simple cases.  Subsequent assigments will expand use
+    of additional powers.
+
+BASIC ASSUMPTIONS
+
+    1. The assignments and programming solutions are in English
+    2. Operation is by keyboard and mouse with a desktop PC or laptop and 14"
+       or larger display.
+    3. The PC is running a recent version of Microsoft Windows (version 10 or
+       11 preferred).
+    4. There is familiarity with the Windows File Explorer and its use for
+       creating and navigating among file folders (directories)
+
+PREREQUISITES
+
+    5. Have a text editor for making text and C/C++ program code files.
+       Microsoft Visual Studio Code is used for illustration.  VS Code is
+       recommended for features to be employed in progression to more-
+       powerful operation.
+    6. A recent version of Visual Studio has been installed.  The examples
+       will require only the Visual Studio Build Tools.  Additional features
+       of Visual Studio Community Editions and Professional Editions are not
+       employed.
+    7. Use of a VS Developer Command Prompt is required.  Basic use of the
+       command-line environment is required in the approach employed here.
+
+       [Links to tool installation and operation web pages to be supplied.]
+
+INITIAL SETUP
+
+    [TBD]
+
+EDIT, COMPILE, ANALYZE ERROR REPORTS, TEST/RUN, RINSE, REPEAT
+
+    [TBD]
+
+MANIFEST
+
+    S1-FirstProgram.txt
+        this synopsis, narration, manifest, and job jar
+
+    hello.c
+        A version of the first program, as C since no CPP features are
+        required
+
+    hello.obj
+        a byproduct of successfully compiling hello.c using the VC/C++
+        program cl.exe
+
+    hello.exe
+        the final result of successfully compiling hello.c using the VC/C++
+        program cl.exe
+
+    Hello-2021-10-2152-CommandPromptBuild.png
+        example of establishing the developer command-line environment,
+        navigating to this folder, compiling the program, running the
+        resulting program, and dispaying the directory content as it was
+        at that time.
+
+    .gitignore
+        is a file that applies to the use of Git and GitHub in providing
+        backup of the materials in this folder.  Not essential for the
+        assignment; Git and GitHub are introduced as a valuable practices
+        later.
+
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Building the FC_CPP First Program with VC Native Tools.
+   FC_CPP project text file S1-FirstProgram.txt version 0.0.0 dated
+   2021-10-10, available on the Internet as a version of
+<https://github.com/orcmid/FC_CPP/blob/master/FC_CPP/S1-FirstProgram/S1-FirstProgram.txt>
+
+TODO
+
+  * Complete the scaffolding down from here.
+
+  * Complete the .gitattributes and .gitignore for here
+
+  * Link to VS Build Tools installation
+
+  * Link to Developer Command Prompt
+
+  * Link to creation of shortcuts
+
+  * Have background and links for the S1 and S2 folios, prrerquisities,
+    and the tools involved
+    ** Command Prompt
+    ** VS Code
+    ** VC command line environment
+    ** the Command Prompt edit, save, compile, run/test, rinse repeat.
+    ** other skill identifications, appealing to nfoTools materials and
+       linked resources
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+ 0.0.0 2021-10-10T19:11Z Placeholding First Draft
+
+                  ***** end of S1-FirstProgram.txt *****
