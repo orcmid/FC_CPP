@@ -1,4 +1,4 @@
-FC_CPP.txt 0.0.2                    UTF-8                         2021-10-09
+FC_CPP.txt 0.0.3                    UTF-8                         2021-10-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -16,13 +16,13 @@ FC_CPP.txt 0.0.2                    UTF-8                         2021-10-09
 
     I started when the course was announced and I was dismayed by the lack
     of on-ramp and guard rails for beginners.  I also felt that unification
-    around MingW as part of raylib install was suboptimal for studentw who
+    around MingW as part of raylib install was suboptimal for students who
     might benefit more with a simpler use of Microsoft VS Build Tools and
     the native compiler, cl.exe.  I don't see CMake and Visual Code workspaces
     as appropriate starting points.  There is too much mystery without any
     foundation.
 
-    I am committed to Windows and VS Build Tools case.  I might consider
+    I am committed to Windows and VS Build Tools cases.  I might consider
     alternative use of raylib on and for other platforms as opportunities
     become evident.  The priority is for Windows and the enormous population
     of potentially-curious learners.
@@ -31,8 +31,7 @@ FC_CPP.txt 0.0.2                    UTF-8                         2021-10-09
     public nfoTools provisions for understanding the tools and simple ways
     of operating with them.  There are supporting provisions in the raylib
     project that allows for a simpler and ideally more-informative on-ramp.
-    I would rather make similar demonstrations of raylib usage independent
-    of FC_CPP and keep this confirmation of VC usage as a private effort.
+    I will introduce one of those.
 
 MANIFEST
 
@@ -58,8 +57,8 @@ MANIFEST
         easy to slip in a later version.
 
     LICENSE.txt
-        the Apache License is not so relevant here, but I want to demonstrate
-        the practice
+        the Apache License is not so relevant here.  I want to demonstrate
+        the practice from the beginning.
 
     .gitatttibutes
         used to differentiate text and binary file formats for reliable
@@ -90,7 +89,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Orcmid's Programming Assignments.  FC_CPP project
-   text file FC_CPP.txt version 0.0.1 dated 2021-10-08, available on the
+   text file FC_CPP.txt version 0.0.2 dated 2021-10-12, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
 
@@ -123,15 +122,15 @@ TODO
     to *nix including WSL.  We can look at that for opportunistic options.
     I am less certain about Apple and MacOS.
 
-  * Point out that this effort is on Windows first and similar arrangements
-    on *nix only where there are harmonious equivalents.
-
   * Add a NOTICE.txt out of consistency and a practice that I would encourage
     in any public repository.
+
+  * Consider making this project public at some point.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.3 2021-10-12T17:05Z Touch up, manage TODOs
  0.0.2 2021-10-09T16:44Z Add TODOs, clarify emphasis and motivation
  0.0.1 2021-10-08T20:45Z Bring current
  0.0.0 2021-10-08T01:57Z Placeholder
