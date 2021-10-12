@@ -1,4 +1,4 @@
-S1-FirstProgram.txt 0.0.0           UTF-8                         2021-10-10
+S1-FirstProgram.txt 0.0.1           UTF-8                         2021-10-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -33,13 +33,15 @@ PREREQUISITES
     5. Have a text editor for making text and C/C++ program code files.
        Microsoft Visual Studio Code is used for illustration.  VS Code is
        recommended for features to be employed in progression to more-
-       powerful operation.
+       powerful operation. [TBD: Link to install and setup of VS Code.]
     6. A recent version of Visual Studio has been installed.  The examples
        will require only the Visual Studio Build Tools.  Additional features
        of Visual Studio Community Editions and Professional Editions are not
-       employed.
+       employed. [TBD: Link to downloading and setup of VS Build Tools]
     7. Use of a VS Developer Command Prompt is required.  Basic use of the
        command-line environment is required in the approach employed here.
+       [TBD: Link to information on using Command Prompt.  Adding a shortcut
+       is extra credit.]
 
        [Links to tool installation and operation web pages to be supplied.]
 
@@ -103,8 +105,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Building the FC_CPP First Program with VC Native Tools.
-   FC_CPP project text file S1-FirstProgram.txt version 0.0.0 dated
-   2021-10-10, available on the Internet as a version of
+   FC_CPP project text file S1-FirstProgram.txt version 0.0.1 dated
+   2021-10-12, available on the Internet as a version of
 <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP/S1-FirstProgram/S1-FirstProgram.txt>
 
 TODO
@@ -128,9 +130,12 @@ TODO
     ** other skill identifications, appealing to nfoTools materials and
        linked resources
 
+  * Consider refining the English to an ESL level.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.1 2021-10-12T19:39Z Touch-ups
  0.0.0 2021-10-10T19:11Z Placeholding First Draft
 
                   ***** end of S1-FirstProgram.txt *****
