@@ -1,4 +1,4 @@
-<!-- FC_CPP/README.md 0.0.1         UTF-8                        2021-10-10
+<!-- FC_CPP/README.md 0.0.2         UTF-8                        2021-10-12
      ---1----|----2----|----3----|----4----|----5----|----6----|----7----|--*>
      -->
 
@@ -13,8 +13,6 @@ construction, along with development steps, are sketched in the individual
 folders.  The organization is sketched at [FC_CPP.txt](FC_CPP.txt)
 
 ## The Very First Step
-
-It helps to anticipate a little and create a workspace on your computer.
 
 I recommend creation of a folder for all of the programming that is done as
 part of the FC_CPP class.  A convenient place on Windows is the Documents
@@ -35,7 +33,8 @@ same names although there is no technical requirement to do so.
 | [S2-Axe](S2-Axe/S2-Axe.txt) | Building up the Axe Game |
 
 
-<!-- 0.0.1 2021-10-10T21:18Z Add first steps and directory of next steps
+<!-- 0.0.2 2021-10-12T17:09Z Touch-ups
+     0.0.1 2021-10-10T21:18Z Add first steps and directory of next steps
      0.0.0 2021-10-09T22:05Z placeholder with ruler and clean MD Lint
 
                         *** end of README.md ***
