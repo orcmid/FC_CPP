@@ -54,7 +54,7 @@ name in following along and comparing your results.
 |   --:         |  :--       |
 |  TBD          |  Something |
 
- <!--
+<!--
       0.0.2 2021-10-14T19:05Z Touch-ups and working around HTML comments
             glitch in GitHup pages.
       0.0.1 2021-10-14T17:29Z Prime the pump by adaptation for a placeholder
