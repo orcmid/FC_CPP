@@ -1,0 +1,96 @@
+docs.txt 0.0.1                      UTF-8                      dh:2021-10-14
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                        FC_CPP ASSIGNMENTS WITH NFOTOOLS
+                        ================================
+
+        <https://github.com/orcmid/FC_CPP/blob/master/docs/docs.txt>
+                  <https://orcmid.github.io/FC_CPP/docs.txt>
+
+             WEB COVERAGE OF THE FC_CPP ASSIGNMENTS USING NFOTOOLS
+             -----------------------------------------------------
+
+    Documentation of FC_CPP is provided so it can be viewed and understood
+    via <https://orcmid.github.io/nfoTools/>.  This keeps images and narration
+    from cluttering the code files.  We take advantage of the GitHub feature
+    for publishing from docs/.
+
+    This file, doc.txt, is the entry to the FC_CPP site-authoring construction
+    structure.  That structure is also conveyed into the web site where it
+    is mirrored in the site itself.  The pattern for such site construction
+    is described under the Document Engineering Project (docEng), at
+    <https://github.com/orcmid/docEng> (https://orcmid.github.io/docEng/).
+
+    We will rely on nfoTools for much of the explanatory background and HOWTOs
+    with regard to use of Visual Studio Build Tools, especially cl.exe and the
+    developer command prompt.  We do not attempt to repeat any of that here.
+    Instead, the specific customizations for FC_CPP will be identified and
+    the background context linked to in (https://orcmid.github.io/nfoTools/)
+
+MANIFEST
+
+    docs.txt
+        this manifest and job-jar file
+
+   index.md [TBD]
+        markdown form of the home page which becomes the default page
+        <https://orcmid.github.io/FC_CPP/index.html>
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Web Coverage of the FC_CPP Assignments Using nfoTools.
+   orcmid/FC_CPP project text file docss.txt version 0.0.1 dated 2021-10-14,
+   available on the Internet as a version of
+   <https://orcmid.github.io/FC_CPP/ocs.txt>.
+
+TODO
+
+  * Provide detailed connection to the docEng pattern documentation whenever.
+
+  * Prepare for folio structure working through the exercises.
+
+  * Setup docs/ for GitHub pages and see how that works with this being a
+    private project (and make public if necessary).
+
+  * Add LICENSE and NOTICES, also place copyright symbol, etc. Add an
+    explanation sort of like the Creative Commons simple deed.  Maybe in
+    NOTICES.  Replicate the files at the repository root for Fc_CPP.
+
+  * Arrange link to the (this) construction structure.
+
+  * Attribution on the published pages too?
+
+  * Deal with prerequisites.  See the statement at rayLab on the subject.
+    Here, we want to provide more and also find something gentle enough
+    for beginners.  This is what skills is intended to butress.  Need to
+    get going on those and on the toolcraft too.
+
+  * There will be topics on construction and scaffolding that belong
+    under construction/ and any About material, just like any orcmid GitHub
+    proect.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.1 2021-10-14T16:56Z Mutate to placeholder for FC_CPP/dos/docs.txt
+ 0.0.0 2021-10-14T16:31Z Clone nfoTools/docs/docs.txt 0.0.11
+
+                          ***** end of docs.txt *****
