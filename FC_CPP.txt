@@ -1,4 +1,4 @@
-FC_CPP.txt 0.0.3                    UTF-8                         2021-10-12
+FC_CPP.txt 0.0.4                    UTF-8                         2021-10-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -57,8 +57,11 @@ MANIFEST
         easy to slip in a later version.
 
     LICENSE.txt
-        the Apache License is not so relevant here.  I want to demonstrate
-        the practice from the beginning.
+        the Apache License was originally not thought to be so relevant here.
+        I want to demonstrate the practice from the beginning.
+    NOTICE.txt
+        Similarly, I am introducing an Apache-style NOTICE that I also use
+        for "third-party" notifications and acknowledgments.
 
     .gitatttibutes
         used to differentiate text and binary file formats for reliable
@@ -89,7 +92,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Orcmid's Programming Assignments.  FC_CPP project
-   text file FC_CPP.txt version 0.0.2 dated 2021-10-12, available on the
+   text file FC_CPP.txt version 0.0.4 dated 2021-10-14, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
 
@@ -97,9 +100,7 @@ TODO
 
   * Complete the scaffolding down from here.
 
-  * Complete the .gitattributes and .gitignore for here
-
-  * Setup S1 and S2 programming assignments and their organization.
+   * Setup S1 and S2 programming assignments and their organization.
 
   * For S2, use a rawVC variant and refine its usage.
 
@@ -122,14 +123,18 @@ TODO
     to *nix including WSL.  We can look at that for opportunistic options.
     I am less certain about Apple and MacOS.
 
-  * Add a NOTICE.txt out of consistency and a practice that I would encourage
-    in any public repository.
-
   * Consider making this project public at some point.
+
+  * I am creating docs/ and will see if that is public independent of the
+    repo being private.  That will be interesting.
+
+  * I do intend to make this project public once I have cleaned up enough
+    to be appropriate with respect to the Udemy course and Gamedev.tv.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.4 2021-10-14T16:27Z Realign for making public, starting a docs/
  0.0.3 2021-10-12T17:05Z Touch up, manage TODOs
  0.0.2 2021-10-09T16:44Z Add TODOs, clarify emphasis and motivation
  0.0.1 2021-10-08T20:45Z Bring current
