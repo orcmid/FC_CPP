@@ -1,4 +1,4 @@
-docs.txt 0.0.1                      UTF-8                      dh:2021-10-14
+docs.txt 0.0.2                      UTF-8                      dh:2021-10-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         FC_CPP ASSIGNMENTS WITH NFOTOOLS
@@ -11,17 +11,16 @@ docs.txt 0.0.1                      UTF-8                      dh:2021-10-14
              -----------------------------------------------------
 
     Documentation of FC_CPP is provided so it can be viewed and understood
-    via <https://orcmid.github.io/nfoTools/>.  This keeps images and narration
+    via <https://orcmid.github.io/FC_CPP/>.  This keeps images and narration
     from cluttering the code files.  We take advantage of the GitHub feature
     for publishing from docs/.
 
     This file, doc.txt, is the entry to the FC_CPP site-authoring construction
-    structure.  That structure is also conveyed into the web site where it
-    is mirrored in the site itself.  The pattern for such site construction
-    is described under the Document Engineering Project (docEng), at
-    <https://github.com/orcmid/docEng> (https://orcmid.github.io/docEng/).
+    structure.  That structure is also conveyed into the web site. The pattern
+    for site construction is a case of Document Engineering Project (docEng),
+    at <https://github.com/orcmid/docEng> (https://orcmid.github.io/docEng/).
 
-    We will rely on nfoTools for much of the explanatory background and HOWTOs
+    nfoTools are relied upon for much of the explanatory background and HOWTOs
     with regard to use of Visual Studio Build Tools, especially cl.exe and the
     developer command prompt.  We do not attempt to repeat any of that here.
     Instead, the specific customizations for FC_CPP will be identified and
@@ -32,10 +31,14 @@ MANIFEST
     docs.txt
         this manifest and job-jar file
 
-   index.md [TBD]
-        markdown form of the home page which becomes the default page
+   index.md
+        markdown form of the home page which is published as the default page
         <https://orcmid.github.io/FC_CPP/index.html>
 
+    LICENSE.txt
+        Apache License version 2
+    NOTICE.txt
+        Apache-style Notice with acknowledgments
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -58,9 +61,9 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Web Coverage of the FC_CPP Assignments Using nfoTools.
-   orcmid/FC_CPP project text file docss.txt version 0.0.1 dated 2021-10-14,
+   orcmid/FC_CPP project text file docss.txt version 0.0.2 dated 2021-10-14,
    available on the Internet as a version of
-   <https://orcmid.github.io/FC_CPP/ocs.txt>.
+   <https://orcmid.github.io/FC_CPP/docs.txt>.
 
 TODO
 
@@ -68,12 +71,8 @@ TODO
 
   * Prepare for folio structure working through the exercises.
 
-  * Setup docs/ for GitHub pages and see how that works with this being a
-    private project (and make public if necessary).
-
-  * Add LICENSE and NOTICES, also place copyright symbol, etc. Add an
-    explanation sort of like the Creative Commons simple deed.  Maybe in
-    NOTICES.  Replicate the files at the repository root for Fc_CPP.
+  * Add an explanation to NOTICE.txt sort of like the Creative Commons simple
+   deed.
 
   * Arrange link to the (this) construction structure.
 
@@ -90,6 +89,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2021-10-14T19:12Z Touch up and manage TODOs
  0.0.1 2021-10-14T16:56Z Mutate to placeholder for FC_CPP/dos/docs.txt
  0.0.0 2021-10-14T16:31Z Clone nfoTools/docs/docs.txt 0.0.11
 
