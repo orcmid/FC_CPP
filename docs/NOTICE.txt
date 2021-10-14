@@ -1,0 +1,65 @@
+NOTICE.txt 1.1.0                    UTF-8                          2021-10-13
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                             ORCMID/FC_CPP NOTICE
+                             ====================
+
+This work is licensed to you under the Apache License, Version 2.0 (the
+"License"; you may not use this work except in compliance with the License.
+You may obtain a copy of the license at
+
+    <http://www.apache.org/licenses/LICENSE-2.0>.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either expressed or implied.  See
+the License for the specific language governing permission and limitations
+under the License.
+
+THIRD-PARTY ACKNOWLEDGMENTS
+===========================
+
+FC_CPP
+------
+
+This project demonstrates the project author's carrying out of programming
+assignments in the Udemy course "C++ Fundamentals: Game Programming for
+Beginners" <https://www.udemy.com/course/cpp-fundamentals/>, referred to as
+FC_CPP on Gamedev.tv.  This is not a substitute for that course.  Although
+there are necessary similarities in the use of software and tools in achieving
+the assignment results, the work to do so is that of this project's author and
+similarities to course-offered results are unavoidable.  Nevertheless, the
+tools are used here in quite different ways than provided by the FC_CPP
+instructors.  The notices incorporated in the various solutions here shall not
+be removed and suitable acknowledgment must be provided in any derivative
+usage.
+
+RAYLIB
+------
+
+This project makes use of raylib, the project of Ramon Santamaria on GitHub
+at <https://github.com/raysan5/raylib> and subject to the following license:
+ - - - - - - - - - - - - - - - - -
+Copyright (c) 2013-2021 Ramon Santamaria (@raysan5)
+
+This software is provided "as-is", without any express or implied warranty.
+In no event will the authors be held liable for any damages arising from the
+use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it freely,
+subject to the following restrictions:
+
+  1. The origin of this software must not be misrepresented; you must not
+  claim that you wrote the original software. If you use this software in a
+  product, an acknowledgment in the product documentation would be appreciated
+  but is not required.
+
+  2. Altered source versions must be plainly marked as such, and must not be
+  misrepresented as being the original software.
+
+  3. This notice may not be removed or altered from any source distribution.
+ - - - - - - - - - - - - - - - - -
+
+
+                    *** end of FC_CPP NOTICE.txt ***

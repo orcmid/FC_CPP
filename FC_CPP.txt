@@ -1,4 +1,4 @@
-FC_CPP.txt 0.0.4                    UTF-8                         2021-10-14
+FC_CPP.txt 0.0.5                    UTF-8                         2021-10-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -39,6 +39,10 @@ MANIFEST
         this synopsis, manifest, and job jar
     README.md
         typical for GitHub projects, a simple placeholder in this case
+
+    docs/
+        folder for the authoring pages of the web narration of native Windows
+        approaches to the Udemy FC_CPP assignments
 
     S1-FirstProgram/
         A version of the first program, as C since no CPP features are
@@ -92,7 +96,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Orcmid's Programming Assignments.  FC_CPP project
-   text file FC_CPP.txt version 0.0.4 dated 2021-10-14, available on the
+   text file FC_CPP.txt version 0.0.5 dated 2021-10-14, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
 
@@ -123,17 +127,13 @@ TODO
     to *nix including WSL.  We can look at that for opportunistic options.
     I am less certain about Apple and MacOS.
 
-  * Consider making this project public at some point.
-
-  * I am creating docs/ and will see if that is public independent of the
-    repo being private.  That will be interesting.
-
-  * I do intend to make this project public once I have cleaned up enough
-    to be appropriate with respect to the Udemy course and Gamedev.tv.
+  * This project is public so I can publish docs/.  I will continue
+    cleaning up to be appropriate with respect to the Udemy course and
+    Gamedev.tv.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+ 0.0.5 2021-10-14T17:34Z Adjust for docs/ and manage TODOs
  0.0.4 2021-10-14T16:27Z Realign for making public, starting a docs/
  0.0.3 2021-10-12T17:05Z Touch up, manage TODOs
  0.0.2 2021-10-09T16:44Z Add TODOs, clarify emphasis and motivation
