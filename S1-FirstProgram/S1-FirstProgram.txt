@@ -1,4 +1,4 @@
-S1-FirstProgram.txt 0.0.1           UTF-8                         2021-10-12
+S1-FirstProgram.txt 0.0.2           UTF-8                         2021-10-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -17,6 +17,10 @@ S1-FirstProgram.txt 0.0.1           UTF-8                         2021-10-12
     There is minimal use of freely-available tools as part of a first exposure
     and demonstration of simple cases.  Subsequent assigments will expand use
     of additional powers.
+
+    The demonstrated single-file program and its editing and compilation is
+    a pattern that can be applied already in development of user-created
+    programming experiments.
 
 BASIC ASSUMPTIONS
 
@@ -70,7 +74,7 @@ MANIFEST
         the final result of successfully compiling hello.c using the VC/C++
         program cl.exe
 
-    Hello-2021-10-2152-CommandPromptBuild.png
+    Hello-2021-10-16-1329-CommandPromptBuild.png
         example of establishing the developer command-line environment,
         navigating to this folder, compiling the program, running the
         resulting program, and dispaying the directory content as it was
@@ -81,7 +85,6 @@ MANIFEST
         backup of the materials in this folder.  Not essential for the
         assignment; Git and GitHub are introduced as a valuable practices
         later.
-
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -105,8 +108,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Building the FC_CPP First Program with VC Native Tools.
-   FC_CPP project text file S1-FirstProgram.txt version 0.0.1 dated
-   2021-10-12, available on the Internet as a version of
+   FC_CPP project text file S1-FirstProgram.txt version 0.0.2 dated
+   2021-10-16, available on the Internet as a version of
 <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP/S1-FirstProgram/S1-FirstProgram.txt>
 
 TODO
@@ -135,6 +138,7 @@ TODO
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.2 2021-10-16T20:39Z Rework after expanded narration and outputs
  0.0.1 2021-10-12T19:39Z Touch-ups
  0.0.0 2021-10-10T19:11Z Placeholding First Draft
 
