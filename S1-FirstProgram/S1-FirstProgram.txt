@@ -1,11 +1,11 @@
-S1-FirstProgram.txt 0.0.3           UTF-8                         2021-10-17
+S1-FirstProgram.txt 0.0.4           UTF-8                         2021-10-17
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
               ================================================
 
                      <https://github.com/orcmid/FC_CPP>
-        <https://github.com/orcmid/FC_CPP/blob/main/FC_CPP/S1-FirstProgram/S1-FirstProgram.txt>
+<https://github.com/orcmid/FC_CPP/blob/main/S1-FirstProgram/S1-FirstProgram.txt>
 
             BUILDING THE FC_CPP FIRST PROGRAM WITH VC NATIVE TOOLS
             ------------------------------------------------------
@@ -108,9 +108,9 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Building the FC_CPP First Program with VC Native Tools.
-   FC_CPP project text file S1-FirstProgram.txt version 0.0.2 dated
-   2021-10-16, available on the Internet as a version of
-<https://github.com/orcmid/FC_CPP/blob/master/FC_CPP/S1-FirstProgram/S1-FirstProgram.txt>
+   FC_CPP project text file S1-FirstProgram.txt version 0.0.4 dated
+   2021-10-17, available on the Internet as a version of
+<https://github.com/orcmid/FC_CPP/blob/main/S1-FirstProgram/S1-FirstProgram.txt>
 
 TODO
 
@@ -166,8 +166,14 @@ TODO
 
   * Also pre-processor.
 
+  * SPLIT OUT MATERIAL THAT IS BEST HANDLED IN S0-GettingStarted.
+
+  * Move the .gitignore here up one level to have it at FC_CPP and not
+    having to be explained or mentioned here.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2021-10-17T18:47Z Correct URLs and Anticipate S0-GettingStarted
  0.0.3 2021-10-17T15:44Z Musings on Setting Up and Progressive Disclosure
  0.0.2 2021-10-16T20:39Z Rework after expanded narration and outputs
  0.0.1 2021-10-12T19:39Z Touch-ups
