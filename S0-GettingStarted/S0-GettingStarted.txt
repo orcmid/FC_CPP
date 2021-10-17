@@ -1,0 +1,180 @@
+S0-GettingStarted.txt 0.0.0         UTF-8                         2021-10-17
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+              C++ Fundamentals: Game Programming for Beginners
+              ================================================
+
+                     <https://github.com/orcmid/FC_CPP>
+<https://github.com/orcmid/FC_CPP/blob/main/S0-GettingStarted/S0-GettingStarted.txt>
+
+               GETTING STARTED WITH MICROSOFT TOOLS FOR C/C++
+               ----------------------------------------------
+
+    [EDITOR: REWORK THE FOLLOWING FOR S0-GettingStarted]
+
+    This is a  Native VC/C++ solution to the first programming assignmens in
+    the Udemy course, "C++ Fundamentals: Game Programming for Beginners,"
+    <https://www.udemy.com/course/cpp-fundamentals/>.
+
+    There is minimal use of freely-available tools as part of a first exposure
+    and demonstration of simple cases.  Subsequent assigments will expand use
+    of additional powers.
+
+    The demonstrated single-file program and its editing and compilation is
+    a pattern that can be applied already in development of user-created
+    programming experiments.
+
+BASIC ASSUMPTIONS
+
+    1. The assignments and programming solutions are in English
+    2. Operation is by keyboard and mouse with a desktop PC or laptop and 14"
+       or larger display.
+    3. The PC is running a recent version of Microsoft Windows (version 10 or
+       11 preferred).
+    4. There is familiarity with the Windows File Explorer and its use for
+       creating and navigating among file folders (directories)
+
+PREREQUISITES
+
+    5. Have a text editor for making text and C/C++ program code files.
+       Microsoft Visual Studio Code is used for illustration.  VS Code is
+       recommended for features to be employed in progression to more-
+       powerful operation. [TBD: Link to install and setup of VS Code.]
+    6. A recent version of Visual Studio has been installed.  The examples
+       will require only the Visual Studio Build Tools.  Additional features
+       of Visual Studio Community Editions and Professional Editions are not
+       employed. [TBD: Link to downloading and setup of VS Build Tools]
+    7. Use of a VS Developer Command Prompt is required.  Basic use of the
+       command-line environment is required in the approach employed here.
+       [TBD: Link to information on using Command Prompt.  Adding a shortcut
+       is extra credit.]
+
+       [Links to tool installation and operation web pages to be supplied.]
+
+INITIAL SETUP
+
+    [TBD]
+
+EDIT, COMPILE, ANALYZE ERROR REPORTS, TEST/RUN, RINSE, REPEAT
+
+    [TBD]
+
+MANIFEST
+
+    S1-FirstProgram.txt
+        this synopsis, narration, manifest, and job jar
+
+    hello.c
+        A version of the first program, as C since no CPP features are
+        required
+
+    hello.obj
+        a byproduct of successfully compiling hello.c using the VC/C++
+        program cl.exe
+
+    hello.exe
+        the final result of successfully compiling hello.c using the VC/C++
+        program cl.exe
+
+    Hello-2021-10-16-1329-CommandPromptBuild.png
+        example of establishing the developer command-line environment,
+        navigating to this folder, compiling the program, running the
+        resulting program, and dispaying the directory content as it was
+        at that time.
+
+    .gitignore
+        is a file that applies to the use of Git and GitHub in providing
+        backup of the materials in this folder.  Not essential for the
+        assignment; Git and GitHub are introduced as a valuable practices
+        later.
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Getting Started with Microsoft Tools for C/C++.
+   FC_CPP project text file S1-FirstProgram.txt version 0.0.0 dated
+   2021-10-17, available on the Internet as a version of
+<https://github.com/orcmid/FC_CPP/blob/master/S0-GettingStarted/S0-GettingStarted.txt>
+
+TODO
+
+  * Complete the scaffolding down from here.
+
+  * Complete the .gitattributes and .gitignore for here
+
+  * Link to VS Build Tools installation
+
+  * Link to Developer Command Prompt
+
+  * Link to creation of shortcuts
+
+  * Have background and links for the S1 and S2 folios, prrerquisities,
+    and the tools involved
+    ** Command Prompt
+    ** VS Code
+    ** VC command line environment
+    ** the Command Prompt edit, save, compile, run/test, rinse repeat.
+    ** other skill identifications, appealing to nfoTools materials and
+       linked resources
+
+  * Consider refining the English to an ESL level.
+
+  * I am wondering if the setup should not be an S0 topic.
+
+  * I also think we need to deal with the environment and what the compilation
+    and linking project is all about. Diagrams are needed.  While mainly in
+    docs/, I think there is a little project to create also.
+
+  * Move some of the commentary to the confirmation setup?  The classic
+    "Hello, World" needs to be treated.  We will use puts(s) instead of
+    printf(f, ...) and also int main(void) for reasons to be explained.
+
+  * Address the jargon of speaking of puts() and printf(), etc., as signalling
+    that we mean C Language "functions" having those names.
+
+  * When do we introduce the unexpected mathematical nature of int, unsigned
+    int, float, etc., along with char and char[].  Hmm, and also care in the
+    reading of function prototypes with regard to pointers and by-value.
+
+  * Even for beginners, we need progressive disclosure.  The idea is to follow
+    the Getting Started advice of Brian W. Kernighan and Dennis M. Ritchie
+    in section 1.1 Getting Started in "The C Programming Language" p.5:
+
+        "The only way to learn a new programming language is by
+         writing programs in it.  The first program to write is
+         the same for all languages."
+
+  * We need to know about *.c, *.h, *.cpp, and *.hpp (or just *).
+
+  * Need to explain about rulers.
+
+  * Also pre-processor.
+
+  * In the manner of "the least that could possibly work" we want "the least
+    that clearly works."
+
+  * EDIT DOWN FROM BORROWED BOILER PLATE TO SPECIFICS FOR S0-GettingStarted.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2021-10-17T18:39Z Clone S1-FirstProgram.txt for Boiler Plate
+
+                  ***** end of S1-GettingStarted.txt *****
