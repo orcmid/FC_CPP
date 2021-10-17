@@ -1,4 +1,4 @@
-FC_CPP.txt 0.0.6                    UTF-8                         2021-10-14
+FC_CPP.txt 0.0.7                    UTF-8                         2021-10-17
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -98,7 +98,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Orcmid's Programming Assignments.  FC_CPP project
-   text file FC_CPP.txt version 0.0.6 dated 2021-10-14, available on the
+   text file FC_CPP.txt version 0.0.7 dated 2021-10-17, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
 
@@ -129,12 +129,14 @@ TODO
     to *nix including WSL.  We can look at that for opportunistic options.
     I am less certain about Apple and MacOS.
 
-  * This project is public so I can publish docs/.  I will continue
-    cleaning up to be appropriate with respect to the Udemy course and
-    Gamedev.tv.
+  * Continue cleaning up to be appropriate with respect to the Udemy course
+    and Gamedev.tv.
+
+  * REPLACE URLS WITH "master" TO USE THE CORRECT-FOR-HERE "main"
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2021-10-17T21:09Z Identify that main applies here, not master
  0.0.6 2021-10-14T20:24Z More cleanup to be novice and FC_CPP student friendly
  0.0.5 2021-10-14T17:34Z Adjust for docs/ and manage TODOs
  0.0.4 2021-10-14T16:27Z Realign for making public, starting a docs/
