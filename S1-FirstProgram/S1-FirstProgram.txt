@@ -1,4 +1,4 @@
-S1-FirstProgram.txt 0.0.2           UTF-8                         2021-10-16
+S1-FirstProgram.txt 0.0.3           UTF-8                         2021-10-17
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -135,9 +135,40 @@ TODO
 
   * Consider refining the English to an ESL level.
 
+  * I am wondering if the setup should not be an S0 topic.
+
+  * I also think we need to deal with the environment and what the compilation
+    and linking project is all about. Diagrams are needed.  While mainly in
+    docs/, I think there is a little project to create also.
+
+  * Move some of the commentary to the confirmation setup?  The classic
+    "Hello, World" needs to be treated.  We will use puts(s) instead of
+    printf(f, ...) and also int main(void) for reasons to be explained.
+
+  * Address the jargon of speaking of puts() and printf(), etc., as signalling
+    that we mean C Language "functions" having those names.
+
+  * When do we introduce the unexpected mathematical nature of int, unsigned
+    int, float, etc., along with char and char[].  Hmm, and also care in the
+    reading of function prototypes with regard to pointers and by-value.
+
+  * Even for beginners, we need progressive disclosure.  The idea is to follow
+    the Getting Started advice of Brian W. Kernighan and Dennis M. Ritchie
+    in section 1.1 Getting Started in "The C Programming Language" p.5:
+
+        "The only way to learn a new programming language is by
+         writing programs in it.  The first program to write is
+         the same for all languages."
+
+  * We need to know about *.c, *.h, *.cpp, and *.hpp (or just *).
+
+  * Need to explain about rulers.
+
+  * Also pre-processor.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+ 0.0.3 2021-10-17T15:44Z Musings on Setting Up and Progressive Disclosure
  0.0.2 2021-10-16T20:39Z Rework after expanded narration and outputs
  0.0.1 2021-10-12T19:39Z Touch-ups
  0.0.0 2021-10-10T19:11Z Placeholding First Draft
