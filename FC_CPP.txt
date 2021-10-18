@@ -1,37 +1,41 @@
-FC_CPP.txt 0.0.7                    UTF-8                         2021-10-17
+FC_CPP.txt 0.0.8                    UTF-8                         2021-10-18
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
               ================================================
-
                      <https://github.com/orcmid/FC_CPP>
            <https://github.com/orcmid/FC_CPP/blob/main/FC_CPP.txt>
 
-                       ORCMID'S PROGRAMMING ASSIGNMENTS
-                       --------------------------------
 
-    These are Native VC/C++ solutions to the programming assignments in
-    the Udemy course, "C++ Fundamentals: Game Programming for Beginners,"
-    <https://www.udemy.com/course/cpp-fundamentals/>.
+                     ORCMID'S WINDOWS COMPANION TO FC_CPP
+                     ------------------------------------
 
-    I am providing streamlined Windows and VS Build Tools cases.  The
-    priority will always be Windows first and serving the enormous population
-    of potentially-curious learners having Windows desktop PCs and laptops.
+    The orcmid/FC_CPP project consists of companion materials to the Udemy
+    course, "C++ Fundamentals: Game Programming for Beginners,"
+    <https://www.udemy.com/course/cpp-fundamentals/>.  Here is a leisurely
+    introduction that employs only freely-available tools for native operation
+    on Microsoft Windows.  Variations of the Udemy assignments illustrate
+    C/C++ programming in clean styles.
+
+    The narration of the companion is at <https://orcmid.github.io/FC_CPP>.
+
+    There are streamlined Windows and VS Build Tools cases.  The priority
+    is Windows first, serving the enormous population of potentially-curious
+    learners having Windows desktop PCs and laptops.
 
     The approach is minimalist: using the simplest direct methods that are
     sufficient for the assignments.  The idea is to have a clear on-ramp and
-    guard rails for introduction of novices to this kind of programming.
+    guard rails for introduction of novices to this kind of programming.  The
+    clean use of C/C++ language standards is adhered to.
 
-    This public repository is where I work out my versions of the assignments.
-    There is supporting information in the nfoTools project.  Links are made
-    to nfoTools for introductions to essential tools and simple ways
-    of operating with them <https://github.org/orcmid/nfoTools>.
+    This public repository is where I work out my versions of the assignments
+    and supplementary materials.  There is supporting information in the
+    nfoTools project for detailed introductions to essential tools and simple
+    operations with them <https://orcmid.github.io/orcmid/nfoTools>.
 
     There are supporting provisions in the raylib project that provide a
     simpler and ideally more-informative on-ramp as well.  I will take
-    advantage of those at <https://github.com/raysan5/raylib>.  I might
-    consider alternative use of raylib for other platforms as opportunities
-    become evident.
+    advantage of those at <https://github.com/raysan5/raylib>.
 
 MANIFEST
 
@@ -44,9 +48,13 @@ MANIFEST
         folder for the authoring pages of the web narration of native Windows
         approaches to the Udemy FC_CPP assignments
 
+    S0-GettingStarted/
+        A separate section on setting up and confirming setups with cl.exe
+        and the most-famous Hello World program ever.
+
     S1-FirstProgram/
         A version of the first program, as C since no CPP features are
-        required
+        required.  Preserving that distinction is emphasized.
 
     S2-Axe/
         The second program, the first to employ raylib, still all in standard
@@ -97,10 +105,10 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Orcmid's Programming Assignments.  FC_CPP project
-   text file FC_CPP.txt version 0.0.7 dated 2021-10-17, available on the
+   Hamilton, Dennis E. Orcmid's Windows Companion to FC_CPP.  FC_CPP project
+   text file FC_CPP.txt version 0.0.8 dated 2021-10-18 available on the
    Internet as a version of
-   <https://github.com/orcmid/FC_CPP/blob/master/FC_CPP.txt>
+   <https://github.com/orcmid/FC_CPP/blob/main/FC_CPP.txt>
 
 TODO
 
@@ -134,8 +142,12 @@ TODO
 
   * REPLACE URLS WITH "master" TO USE THE CORRECT-FOR-HERE "main"
 
+  * Change this project to be a *COMPANION* of the Udemy FC_CPP course.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2021-10-18T17:55Z Initiate change to providing a companion to the
+       Udemy FC_CPP.
  0.0.7 2021-10-17T21:09Z Identify that main applies here, not master
  0.0.6 2021-10-14T20:24Z More cleanup to be novice and FC_CPP student friendly
  0.0.5 2021-10-14T17:34Z Adjust for docs/ and manage TODOs
