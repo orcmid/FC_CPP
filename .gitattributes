@@ -1,7 +1,7 @@
-# .gitattributes 0.0.6              UTF-8                       dh:2021-10-07
+# .gitattributes 0.0.6              UTF-8                       dh:2021-10-18
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 #
-#            GIT ATTRIBUTES FOR THE FC_CPP-GAMEDEV GIT REPOSITORY
+#         GIT ATTRIBUTES FOR ORCMID's FC_CPP COMPANION GIT REPOSITORY
 
 # Set the default behavior in case people don't have core.autocrlf set.
 # This will automatically convert between line-ending style of the client
@@ -46,6 +46,7 @@
 
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+# 0.0.7 2021-10-18T18:25Z Review and adjust the title
 # 0.0.6 2021-10-07T02:08Z Transpose to FC_CPP-GameDev Project
 # 0.0.5 2021-08-30T19:47Z add rulers
 # 0.0.4 2021-08-27T17:58Z Add more binary file document formats
