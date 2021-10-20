@@ -1,17 +1,20 @@
-<!-- FC_CPP/README.md 0.0.3         UTF-8                         2021-10-13
+<!-- FC_CPP/README.md 0.0.4        UTF-8                         2021-10-18
      ---1----|----2----|----3----|----4----|----5----|----6----|----7----|--*>
      -->
 
-# FC\_CPP Fundamentals of CPP for Game Developers - Assignments
+# Orcmid's Windows Companion to FC_CPP: Fundamentals of C++ for Game Developers
 
-This is a repository for working through programming assignments of the
-[Udemy FC_CPP](https://www.udemy.com/course/cpp-fundamentals/) course with
-freely-available tools for building and running programs on Microsoft
-Windows.  The [Notice](NOTICE.txt) accounts for the connection to the class.
+This is a repository for a companion to the programming assignments of the
+[Udemy FC_CPP](https://www.udemy.com/course/cpp-fundamentals/) course.  The
+companion features freely-available tools for building and running programs
+on Microsoft Windows.  The [Notice](NOTICE.txt) accounts for the connection to the Udemy course.
 
-There is no separate documentation at this point.  The repository and its
-construction, along with development steps, are sketched in the individual
-folders.  The organization is sketched at [FC_CPP.txt](FC_CPP.txt)
+The companion materials are published in web pages of
+[orcmid.github.io/FC_CPP](https://orcmid.github.io/FC_CPP).
+
+The repository and its construction, along with development steps, are
+narrated in the individual folders.  That implementation organization is
+sketched at [FC_CPP.txt](FC_CPP.txt)
 
 ## The Very First Step
 
@@ -32,14 +35,17 @@ name in following along and comparing your results.
 
 | **Subfolder** |  **Topic** |
 |   --:       |  ---               |
+| [S0-GettingStarted](S0-GettingStarted/S0-GettingStarted.txt) | Preliminaries and "Hello World" |
 | [S1-FirstProgram](S1-FirstProgram/S1-FirstProgram.txt) | The `hello.c` First Program |
 | [S2-Axe](S2-Axe/S2-Axe.txt) | Building up the Axe Game |
 
 
- <!--0.0.3 2021-10-13T18:48Z Smoothing
-     0.0.2 2021-10-12T17:09Z Touch-ups
-     0.0.1 2021-10-10T21:18Z Add first steps and directory of next steps
-     0.0.0 2021-10-09T22:05Z placeholder with ruler and clean MD Lint
+ <!--
+      0.0.4 2021-10-18T18:48Z Adjustment to Orcmid's Windows Companion
+      0.0.3 2021-10-13T18:48Z Smoothing
+      0.0.2 2021-10-12T17:09Z Touch-ups
+      0.0.1 2021-10-10T21:18Z Add first steps and directory of next steps
+      0.0.0 2021-10-09T22:05Z placeholder with ruler and clean MD Lint
 
                         *** end of README.md ***
      -->

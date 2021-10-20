@@ -1,28 +1,24 @@
-wrk.txt 0.0.3                       UTF-8                         2021-09-29
+wrk.txt 0.0.4                       UTF-8                         2021-10-18
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                         Native Windows raylib Laboratory
-                         ================================
+                   Orcmid's Windows Companion to FC_CPP
+                   ====================================
 
 
-<https://github.com/orcmid/rayLab/blob/master/projects/scripts/rawVC/tmp/tmp.txt>
+      <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/wrk/wrk.txt>
 
-            EXPLORATION OF RAYLAB USAGE IN NATIVE WINDOWS APPS
+            DEMONSTRATION OF RAYLIB USAGE IN NATIVE WINDOWS APPS
 
-                         RAWVC SKELETON WRK FOLDER
-                         -------------------------
+                         S2-AXE RAYLIB CACHE FOLDER
+                         --------------------------
 
-    The raylib/projects/scripts/RAWVC/wrk/ folder is a standard subfolder for
+    The wrk/ folder is a standard subfolder for
     a command-line build with all of its intermediates and customizable
     parameters.
 
     The folder will contain intermediate results of compile activities.  These
     are not required after the build and can easily be reconstructed in a
     subsequent build.
-
-    There are some additional files that are excluded from repositories when
-    loaded from a kit.  These are locally customizable and not intended to
-    be committed to the origin repository when pulled from kits.
 
 MANIFEST
 
@@ -51,34 +47,25 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. rawCL Bare-Bones tmp Folder.  rayLab project
-   text file tmp.txt version 0.0.3 dated 2021-09-29, available on the
+   Hamilton, Dennis E. S2-Axe raylib Cache Folder.  FC_CPP project
+   text file wrk.txt version 0.0.4 dated 2021-10-18, available on the
    Internet as a version of
-   <https://github.com/orcmid/rayLab/blob/master/projects/scripts/rawVC/wrk/wrk.txt>
+   <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/wrk/wrk.txt>
 
 TODO
 
-  * If compiling is done here, the question is whether the option files can
-    be accessed at rawVC from down here.  And then what are relative links
-    determined from.  Note: They are incorporated literally prior to
-    processing the resulting command line, so relative to wrk/.
-
-  * We need VC Toolcraft (in nfoTools) on CL.exe and especially the options
-    files and how things like batch/environment variables and relative links
-    are resolved.
-
-  * Maybe options need to be copied or unzipped to tmp/ to have their
-    customization ignored.  This doesn't quite make sense for rayLab; but it
-    is a devKit case if contributed to raylib.  Hmm.
+ * Maybe this should be renamed cache/ and we would understand what the usage
+   is better.
 
   * Juggle having the least that could possibly work here.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2021-10-18T22:36Z Convert for S2-Axe/wrk/
  0.0.3 2021-09-29T18:13Z Reflect rawVC/ change amid still over-thinking
  0.0.2 2021-09-28T15:07Z Rename from tmp.txt to wrk.txt and over-thinking
  0.0.1 2021-09-28T14:28Z Noodling in TODOs
  0.0.0 2021-09-27T23:13Z placeholder for native-build intermediate materials
 
 
-                          ***** end of tmp.txt *****
+                          ***** end of wrk.txt *****

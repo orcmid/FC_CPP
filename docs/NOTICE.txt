@@ -1,4 +1,4 @@
-NOTICE.txt 1.1.0                    UTF-8                          2021-10-13
+NOTICE.txt 1.1.1                    UTF-8                          2021-10-19
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                              ORCMID/FC_CPP NOTICE
@@ -22,12 +22,16 @@ THIRD-PARTY ACKNOWLEDGMENTS
 FC_CPP
 ------
 
-This project demonstrates the project author's carrying out of programming
-assignments in the Udemy course "C++ Fundamentals: Game Programming for
-Beginners" <https://www.udemy.com/course/cpp-fundamentals/>, referred to as
-FC_CPP on Gamedev.tv.  This is not a substitute for that course.  Although
-there are necessary similarities in the use of software and tools in achieving
-the assignment results, the work to do so is that of this project's author and
+This project includes demonstrations of the project author's carrying out
+programming assignments in the Udemy course "C++ Fundamentals: Game
+Programming for Beginners" <https://www.udemy.com/course/cpp-fundamentals/>,
+referred to as FC_CPP on Gamedev.tv.  This is not a substitute for the course.
+The repository of instructor solutions is not open-source and all rights are
+reserved, although students are instructed in achieving their equivalents.
+<https://gitlab.com/GameDevTV/CPPCourse>.
+
+There are necessary similarities in the use of software and tools in achieving
+the assignment results; the work to do so here is by this project's author and
 similarities to course-offered results are unavoidable.  Nevertheless, the
 tools are used here in quite different ways than provided by the FC_CPP
 instructors.  The notices incorporated in the various solutions here shall not

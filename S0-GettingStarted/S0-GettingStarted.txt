@@ -1,8 +1,8 @@
-S0-GettingStarted.txt 0.0.0         UTF-8                         2021-10-17
+S0-GettingStarted.txt 0.0.1         UTF-8                         2021-10-18
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-              C++ Fundamentals: Game Programming for Beginners
-              ================================================
+                    Orcmid's Windows Companion to FC_CPP
+                    ====================================
 
                      <https://github.com/orcmid/FC_CPP>
 <https://github.com/orcmid/FC_CPP/blob/main/S0-GettingStarted/S0-GettingStarted.txt>
@@ -110,9 +110,9 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Getting Started with Microsoft Tools for C/C++.
-   FC_CPP project text file S1-FirstProgram.txt version 0.0.0 dated
-   2021-10-17, available on the Internet as a version of
-<https://github.com/orcmid/FC_CPP/blob/master/S0-GettingStarted/S0-GettingStarted.txt>
+   FC_CPP project text file S1-FirstProgram.txt version 0.0.1 dated
+   2021-10-18, available on the Internet as a version of
+<https://github.com/orcmid/FC_CPP/blob/main/S0-GettingStarted/S0-GettingStarted.txt>
 
 TODO
 
@@ -175,6 +175,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2021-10-18T18:59Z Reflect change to Companion and use of main branch
  0.0.0 2021-10-17T18:39Z Clone S1-FirstProgram.txt for Boiler Plate
 
-                  ***** end of S1-GettingStarted.txt *****
+                  ***** end of S0-GettingStarted.txt *****
