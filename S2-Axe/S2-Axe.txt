@@ -1,4 +1,4 @@
-S2-Axe.txt 0.0.1                    UTF-8                         2021-10-18
+S2-Axe.txt 0.0.2                    UTF-8                         2021-10-20
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Axe Game with Native VC Builds. FC_CPP Project
-   text file S2-Axe.txt version 0.0.1 dated 2021-10-18, available on the
+   text file S2-Axe.txt version 0.0.2 dated 2021-10-20, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/S2-Axe.txt>
 
@@ -66,8 +66,11 @@ TODO
   * Explain the edit, build, review, run/test cyle and how we can itterate
     with the command prompt and an editor such as Visual Studio Code.
 
+  * Change the name of wrk/ to cache/ before going any farther
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2021-10-20T02:21Z Manage TODOs
  0.0.1 2021-10-18T22:13Z Adjust for companion approach
  0.0.0 2021-10-08T23:24Z Placeholder draft
 
