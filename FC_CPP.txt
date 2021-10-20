@@ -1,4 +1,4 @@
-FC_CPP.txt 0.0.8                    UTF-8                         2021-10-18
+FC_CPP.txt 0.0.9                    UTF-8                         2021-10-20
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -106,7 +106,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Orcmid's Windows Companion to FC_CPP.  FC_CPP project
-   text file FC_CPP.txt version 0.0.8 dated 2021-10-18 available on the
+   text file FC_CPP.txt version 0.0.9 dated 2021-10-20 available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/main/FC_CPP.txt>
 
@@ -140,12 +140,9 @@ TODO
   * Continue cleaning up to be appropriate with respect to the Udemy course
     and Gamedev.tv.
 
-  * REPLACE URLS WITH "master" TO USE THE CORRECT-FOR-HERE "main"
-
-  * Change this project to be a *COMPANION* of the Udemy FC_CPP course.
-
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.9 2021-10-20T02:19Z Manage TODOs
  0.0.8 2021-10-18T17:55Z Initiate change to providing a companion to the
        Udemy FC_CPP.
  0.0.7 2021-10-17T21:09Z Identify that main applies here, not master
