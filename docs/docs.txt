@@ -1,14 +1,14 @@
-docs.txt 0.0.2                      UTF-8                      dh:2021-10-14
+docs.txt 0.0.3                      UTF-8                      dh:2021-10-20
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                        FC_CPP ASSIGNMENTS WITH NFOTOOLS
-                        ================================
+                    Orcmid's Windows Companion to FC_CPP
+                    ====================================
 
-        <https://github.com/orcmid/FC_CPP/blob/master/docs/docs.txt>
+        <https://github.com/orcmid/FC_CPP/blob/main/docs/docs.txt>
                   <https://orcmid.github.io/FC_CPP/docs.txt>
 
-             WEB COVERAGE OF THE FC_CPP ASSIGNMENTS USING NFOTOOLS
-             -----------------------------------------------------
+              WEB DOCUMENTATION OF THE WINDOWS COMPANION TO FC_CPP
+              ----------------------------------------------------
 
     Documentation of FC_CPP is provided so it can be viewed and understood
     via <https://orcmid.github.io/FC_CPP/>.  This keeps images and narration
@@ -16,15 +16,16 @@ docs.txt 0.0.2                      UTF-8                      dh:2021-10-14
     for publishing from docs/.
 
     This file, doc.txt, is the entry to the FC_CPP site-authoring construction
-    structure.  That structure is also conveyed into the web site. The pattern
+    structure.  That structure is extended thrughout the web site. The pattern
     for site construction is a case of Document Engineering Project (docEng),
     at <https://github.com/orcmid/docEng> (https://orcmid.github.io/docEng/).
 
     nfoTools are relied upon for much of the explanatory background and HOWTOs
     with regard to use of Visual Studio Build Tools, especially cl.exe and the
-    developer command prompt.  We do not attempt to repeat any of that here.
-    Instead, the specific customizations for FC_CPP will be identified and
-    the background context linked to in (https://orcmid.github.io/nfoTools/)
+    developer command prompt.  We do not attempt to repeat any of that here,
+    only illustrate it and link to more detail at
+    <https://orcmid.github.io/nfoTools/>.
+
 
 MANIFEST
 
@@ -60,8 +61,8 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Web Coverage of the FC_CPP Assignments Using nfoTools.
-   orcmid/FC_CPP project text file docss.txt version 0.0.2 dated 2021-10-14,
+   Hamilton, Dennis E. Web Documentation of the Windows Companion to FC_CPP,
+   orcmid/FC_CPP project text file docss.txt version 0.0.3 dated 2021-10-20,
    available on the Internet as a version of
    <https://orcmid.github.io/FC_CPP/docs.txt>.
 
@@ -89,6 +90,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2021-10-20T03:14Z Touch up and replace reference to master with main
  0.0.2 2021-10-14T19:12Z Touch up and manage TODOs
  0.0.1 2021-10-14T16:56Z Mutate to placeholder for FC_CPP/dos/docs.txt
  0.0.0 2021-10-14T16:31Z Clone nfoTools/docs/docs.txt 0.0.11
