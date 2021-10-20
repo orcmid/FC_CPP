@@ -1,4 +1,4 @@
-wrk.txt 0.0.4                       UTF-8                         2021-10-18
+cache.txt 0.0.5                     UTF-8                         2021-10-20
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -12,20 +12,17 @@ wrk.txt 0.0.4                       UTF-8                         2021-10-18
                          S2-AXE RAYLIB CACHE FOLDER
                          --------------------------
 
-    The wrk/ folder is a standard subfolder for
-    a command-line build with all of its intermediates and customizable
-    parameters.
-
-    The folder will contain intermediate results of compile activities.  These
+    The cache/ will contain intermediate results of compile activities.  These
     are not required after the build and can easily be reconstructed in a
-    subsequent build.
+    subsequent build.  They are kept around because they usually do not change
+    when the application code is changed and compiled over and over.
 
 MANIFEST
 
-    wrk.txt
+    cache.txt
         this manifest and job-jar file
     .gitignore
-        excluding compilation intermediates from any git repository
+        excluding the compilation intermediates from any git commits
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -48,19 +45,17 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S2-Axe raylib Cache Folder.  FC_CPP project
-   text file wrk.txt version 0.0.4 dated 2021-10-18, available on the
+   text file wrk.txt version 0.0.5 dated 2021-10-20, available on the
    Internet as a version of
-   <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/wrk/wrk.txt>
+   <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/cache/cache.txt>
 
 TODO
-
- * Maybe this should be renamed cache/ and we would understand what the usage
-   is better.
 
   * Juggle having the least that could possibly work here.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2021-10-20T20:16Z Convert for S2-Axe/cache
  0.0.4 2021-10-18T22:36Z Convert for S2-Axe/wrk/
  0.0.3 2021-09-29T18:13Z Reflect rawVC/ change amid still over-thinking
  0.0.2 2021-09-28T15:07Z Rename from tmp.txt to wrk.txt and over-thinking
