@@ -1,0 +1,71 @@
+S0.txt 0.0.0                        UTF-8                      dh:2021-10-20
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    Orcmid's Windows Companion to FC_CPP
+                    ====================================
+
+        <https://github.com/orcmid/FC_CPP/blob/main/docs/S0/S0.txt>
+                  <https://orcmid.github.io/FC_CPP/S0/S0.txt>
+
+                         S0: GETTING STARTED TUTORIAL
+                         ----------------------------
+
+[SYNOPSIS TBD]
+
+
+MANIFEST
+
+    S0.txt
+        this manifest and job-jar file
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. S0: Getting Started, orcmid/FC_CPP project text file
+   S0.txt version 0.0.0 S0.txt version 0.0.0 dated 2021-10-20, available on
+   the Internet as a version of <https://orcmid.github.io/FC_CPP/S0/S0.txt>.
+
+TODO
+
+  * Arrange link to the (this) construction structure.
+
+  * Deal with prerequisites.  See the statement at rayLab on the subject.
+    Here, we want to provide more and also find something gentle enough
+    for beginners.  This is what skills is intended to butress.  Need to
+    get going on those and on the toolcraft too.
+
+  * Mention/Emphasize Visual Studio Code on the web and cover in the
+    getting started. <https://vscode.dev> and,
+    <https://code.visualstudio.com/blogs/2021/10/20/vscode-dev>
+
+  * See if VSCode on the Web will work as an editor and how is it limited
+    with respect to the intellisence and compiling on the client.  Do this
+    on nfoTools too.
+
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+ 0.0.0 2021-10-20T17:43Z Clone FC_CPP/docs/docs.txt 0.0.4 and make boiler
+       plate placeholder here.
+
+                          ***** end of docs.txt *****

@@ -1,4 +1,4 @@
-docs.txt 0.0.3                      UTF-8                      dh:2021-10-20
+docs.txt 0.0.4                      UTF-8                      dh:2021-10-20
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Orcmid's Windows Companion to FC_CPP
@@ -62,7 +62,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Web Documentation of the Windows Companion to FC_CPP,
-   orcmid/FC_CPP project text file docss.txt version 0.0.3 dated 2021-10-20,
+   orcmid/FC_CPP project text file docss.txt version 0.0.4 dated 2021-10-20,
    available on the Internet as a version of
    <https://orcmid.github.io/FC_CPP/docs.txt>.
 
@@ -88,8 +88,15 @@ TODO
     under construction/ and any About material, just like any orcmid GitHub
     proect.
 
+  * Mention/Emphasize Visual Studio Code on the web and cover in the
+    getting started.
+
+  * Setup S0-GettingStarted, S1-FirstProgram, and S2-Axe as initial folders
+    here.  Maybe simplify the URLs though.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2021-10-20T17:08Z Preparing for using docs/ seriously as the narration
  0.0.3 2021-10-20T03:14Z Touch up and replace reference to master with main
  0.0.2 2021-10-14T19:12Z Touch up and manage TODOs
  0.0.1 2021-10-14T16:56Z Mutate to placeholder for FC_CPP/dos/docs.txt

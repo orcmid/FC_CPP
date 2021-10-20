@@ -1,13 +1,12 @@
-<!-- FC_CPP/docs/index.md 0.0.3    UTF-8                         2021-10-14
+<!-- FC_CPP/docs/index.md 0.0.4    UTF-8                         2021-10-20
      ---1----|----2----|----3----|----4----|----5----|----6----|----7----|--*>
      -->
 
-# FC\_CPP Fundamentals of CPP for Game Developers - Assignments
+# Orcmid's Windows Companion to Fundamentals of CPP for Game Developers
 
-The `orcmid/FC_CPP` project walks through programming assignments of the
-[Udemy FC_CPP](https://www.udemy.com/course/cpp-fundamentals/) course. The
-assignments are carried out using freely-available tools for building and
-running programs on Microsoft Windows.
+The `orcmid/FC_CPP` project provides an on-ramp and guard rails for C/C++
+beginners, including the programming assignments of the
+[Udemy FC_CPP](https://www.udemy.com/course/cpp-fundamentals/) course.
 
 The [Notice](NOTICE.txt) accounts for the connection to the Udemy class.
 
@@ -16,9 +15,7 @@ The assignments are evolved here as applications of
 using Microsoft Visual Studio Build Tools and developer command prompts on
 Windows.
 
-The objective is having an on-ramp and guard rails for novices that are eager
-to develop native applications for Microsoft Windows on desktop PCs and
-laptops.  There is simple use of traditional tools without any advanced Visual
+There is simple use of traditional tools without any advanced Visual
 Studio requirements. The recommended use of Visual Studio Code is also kept
 simple, easing familiarization without any burdening advanced features.
 
@@ -55,6 +52,7 @@ name in following along and comparing your results.
 |  TBD          |  Something |
 
 <!--
+      0.0.3 2021-10-20T17:03Z Adjust to be the Windows Companion
       0.0.2 2021-10-14T19:05Z Touch-ups and working around HTML comments
             glitch in GitHup pages.
       0.0.1 2021-10-14T17:29Z Prime the pump by adaptation for a placeholder
