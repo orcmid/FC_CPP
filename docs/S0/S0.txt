@@ -1,4 +1,4 @@
-S0.txt 0.0.0                        UTF-8                      dh:2021-10-20
+S0.txt 0.0.1                        UTF-8                      dh:2021-10-21
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Orcmid's Windows Companion to FC_CPP
@@ -16,7 +16,7 @@ S0.txt 0.0.0                        UTF-8                      dh:2021-10-20
 MANIFEST
 
     S0.txt
-        this manifest and job-jar file
+       this manifest and job-jar file
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -40,7 +40,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S0: Getting Started, orcmid/FC_CPP project text file
-   S0.txt version 0.0.0 S0.txt version 0.0.0 dated 2021-10-20, available on
+   S0.txt version 0.0.0 S0.txt version 0.0.0 dated 2021-10-21, available on
    the Internet as a version of <https://orcmid.github.io/FC_CPP/S0/S0.txt>.
 
 TODO
@@ -60,12 +60,16 @@ TODO
     with respect to the intellisence and compiling on the client.  Do this
     on nfoTools too.
 
+  * Include and contrast the Kernighan and Ritchie "hello world" and a
+    modern one.
 
+  * Work through the VS Code on the Web cases in nfoTools to confirm what
+    can and cannot work for FC_CPP.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
- 0.0.0 2021-10-20T17:43Z Clone FC_CPP/docs/docs.txt 0.0.4 and make boiler
+ 0.0.0 2021-10-21T00:31Z Clone FC_CPP/docs/docs.txt 0.0.4 and make boiler
        plate placeholder here.
 
-                          ***** end of docs.txt *****
+                          ***** end of S0.txt *****
