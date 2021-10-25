@@ -1,4 +1,4 @@
-S0.txt 0.0.1                        UTF-8                      dh:2021-10-21
+S0.txt 0.0.1                        UTF-8                      dh:2021-10-25
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Orcmid's Windows Companion to FC_CPP
@@ -40,8 +40,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S0: Getting Started, orcmid/FC_CPP project text file
-   S0.txt version 0.0.0 S0.txt version 0.0.0 dated 2021-10-21, available on
-   the Internet as a version of <https://orcmid.github.io/FC_CPP/S0/S0.txt>.
+   S0.txt version 0.0.1 dated 2021-10-25, available on the Internet as a
+   version of <https://orcmid.github.io/FC_CPP/S0/S0.txt>.
 
 TODO
 
@@ -66,9 +66,19 @@ TODO
   * Work through the VS Code on the Web cases in nfoTools to confirm what
     can and cannot work for FC_CPP.
 
+  * Do a progressive enrichment.  Ultimately with a return 0; and the arcane
+    knowledge bit that main() is indeed a callable function.  I wonder if the
+    void is needed there too.
+
+  * One needs to deal with the fact that puts (and printf) return ints also
+    and why are we not doing anything about it?  What would we do if we could?
+
+  * We don't really want to deal with STDOUT and STDERR at this point, right?
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+ 0.0.1 2021-10-25T16:05Z TODO musings about edge cases and errors that there
+       is nothing to be done about.
  0.0.0 2021-10-21T00:31Z Clone FC_CPP/docs/docs.txt 0.0.4 and make boiler
        plate placeholder here.
 
