@@ -1,4 +1,4 @@
-# .gitignore 0.0.1                  UTF-8                       dh:2021-10-18
+# .gitignore 0.0.2                  UTF-8                       dh:2021-11-05
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 #
 #                  Orcmid's Windows Companion to FC_CPP
@@ -7,14 +7,20 @@
 #          .GITIGNORE FOR KEEPING EXECUTABLES OUT OF THE REPOSITORY
 #
 #   This .gitignore file is intended to exclude intermediate compilation
-#   materials from the git repository.
+#   materials from the git repository.  The are build-specific and will only
+#   be local in the app/ folder
 
 #   XCopy package executables
 *.exe
 resources/
+#   internediate files
+*.obj
+#   tailored option files
+*.opt
 
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+# 0.0.2 2021-11-05%23:05Z Further adjustments
 # 0.0.1 2021-10-18T21:52Z Adjust for FC_CPP/S2-Axe/app/ companion folder
 # 0.0.0 2021-09-27T23:46Z Block expected final forms - placeholder
 

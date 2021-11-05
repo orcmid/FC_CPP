@@ -1,4 +1,4 @@
-app.txt 0.0.3                       UTF-8                         2021-10-18
+app.txt 0.0.4                       UTF-8                         2021-11-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -22,12 +22,33 @@ app.txt 0.0.3                       UTF-8                         2021-10-18
     possibly after removing some scaffolding.  Addition of a README and other
     user-supporting materials would be handy.
 
+    In zipping up the content of this folder, either selectively zip the
+    .exe and any resources/ or zip everything and then remove the files
+    that are not part of the deliverable.
+
 MANIFEST
 
     app.txt
-        this manifest and job-jar file
+        this manifest and job-jar file (not deliverable)
     .gitignore
         excluding user-specific compilations from a cloned repository
+        (not deliverable)
+    *.opt
+        option filss used in the build process (not deliverable)
+
+    resources/
+        here when provided as a neighbor of the compiled .exe file and to
+        be included in the app package (deliverable)
+
+    *.exe
+        here as the compiled product (deliverable)
+
+    *.obj
+        files that are only transient here and not part of the app package
+        (not deliverable)
+
+
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -50,7 +71,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S2-Axe XCopy App Folder.  Project FC_CPP text file
-   app.txt version 0.0.4 dated 2021-10-18, available on the Internet as a
+   app.txt version 0.0.4 dated 2021-11-05, available on the Internet as a
    version of <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/app/app.txt>
 
 TODO
@@ -65,6 +86,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2021-11-05T23:18Z Dressing up a bit
  0.0.3 2021-10-18T22:03Z Cloned and adjusted for FC_CPP/S2-Axe/app/
  0.0.2 2021-09-29T18:17Z Reflect change from rawCL/ to rawVC/.
  0.0.1 2021-09-28T14:15Z touch-up, manage TODOs
