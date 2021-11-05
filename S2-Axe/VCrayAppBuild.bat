@@ -1,29 +1,39 @@
 @echo off
-REM Change your executable name here
-set GAME_NAME=rayConfirm.exe
+REM VCrayAppBuild.bat 0.0.1         UTF-8                         2021-11-05
+REM |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+REM Specify your executable name here
+set GAME_EXE=rayConfirm.exe
 REM Set your sources here (relative paths!)
-REM Example with two source folders:
-REM set SOURCES=src\*.c src\submodule\*.c
 set SOURCES=rayConfirm.c
 
-REM Set your raylib\src location here (relative path!)
+REM Keep these presets unless a different configuration is desired
+REM Select the folder for caching raylib .obj files
+set TEMP_DIR=cache
+REM Set your raylib\src location here (relative path from cache!)
 set RAYLIB_SRC=..\raylib\src
+REM Set the folder for holding the compiled program and any resources
+set OUTPUT_DIR=app
 
-REM Checks if cl is available and builds
+REM *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
+REM |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+REM Check if Native Command-Line Environment is established.
+REM TODO: CHANGE TO VCBIND STYLE CONFIRMATION <<<<<<<<<<<<<<<<<<<<<
 WHERE cl >nul 2>nul
 IF %ERRORLEVEL% == 0 goto BUILD
 echo "Developer Command-line environment must be set first."
+REM TODO: PROVIDE BETTER HELP ON SETTING ENVIRONMENT <<<<<<<<<<<<<<<<<<<<<
 exit /B
 
 :BUILD
 REM For the ! variable notation
 setlocal EnableDelayedExpansion
-REM For shifting, which the command line argument parsing needs
-setlocal EnableExtensions
 
 set BUILD_ALL=1
+REM TODO: CREATE A SEPARATE CLEAR FUNCTION/OPTION SOMEHOW
 set VERBOSE=1
+REM TODO: SWITCH TO VCBIND SILENT OPTION
 
 REM Directories
 set "ROOT_DIR=%CD%"
@@ -31,18 +41,17 @@ set "SOURCES=!ROOT_DIR!\!SOURCES!"
 set "RAYLIB_SRC=!ROOT_DIR!\!RAYLIB_SRC!"
 
 REM Flags
-set OUTPUT_FLAG=/Fe: "!GAME_NAME!"
+set OUTPUT_FLAG=/Fe: "!GAME_EXE!"
 set COMPILATION_FLAGS=/O1 /GL
 set WARNING_FLAGS=
 set SUBSYSTEM_FLAGS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 set LINK_FLAGS=/link /LTCG kernel32.lib user32.lib shell32.lib winmm.lib gdi32.lib opengl32.lib
-set OUTPUT_DIR=app
+
 
 REM Display what we're doing
-echo COMPILE-INFO: Compiling in release mode, flags: !COMPILATION_FLAGS! /link /LTCG
+echo COMPILE-INFO: Linker code generation: !COMPILATION_FLAGS! /link /LTCG
 
-REM Create the cache directory for raylib
-set TEMP_DIR=cache
+REM Cache raylib .obj files
 
 cd !TEMP_DIR!
 REM Raylib's src folder
@@ -58,18 +67,23 @@ REM Out of the temp directory
 cd !ROOT_DIR!
 
 REM Move to the build directory
-IF NOT EXIST !OUTPUT_DIR! mkdir !OUTPUT_DIR!
 cd !OUTPUT_DIR!
+del *.exe
 
 REM Build the actual game
-echo COMPILE-INFO: Compiling game code.
+echo COMPILE-INFO: Compiling and linking game code.
 
 cl.exe !COMPILATION_FLAGS! !WARNING_FLAGS! /c /I"!RAYLIB_SRC!" !SOURCES! || exit /B
 cl.exe !OUTPUT_FLAG! "!ROOT_DIR!\!TEMP_DIR!\*.obj" *.obj !LINK_FLAGS! !SUBSYSTEM_FLAGS! || exit /B
 
 del *.obj
-echo COMPILE-INFO: Game compiled into an executable in: !OUTPUT_DIR!\
+echo COMPILE-INFO: Game compiled to !OUTPUT_DIR!\!GAME_EXE!
 
 REM Back to development directory
 cd ..
 echo COMPILE-INFO: All done.
+
+REM |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+REM
+REM 0.0.1 2021-11-05T21:39Z Trial Simplification for nfoTools + FC_CPP
+REM 0.0.0 2021-04-26T00:01Z 3.7.0 raylib/projects/scripts/build_windows.bat

@@ -1,4 +1,4 @@
-S2-Axe.txt 0.0.2                    UTF-8                         2021-10-20
+S2-Axe.txt 0.0.3                    UTF-8                         2021-11-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -70,6 +70,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2021-11-05T21:42Z Mangle things while fussing with build-windows.bat
  0.0.2 2021-10-20T02:21Z Manage TODOs
  0.0.1 2021-10-18T22:13Z Adjust for companion approach
  0.0.0 2021-10-08T23:24Z Placeholder draft
