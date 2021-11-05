@@ -1,10 +1,8 @@
-/* The first (1974) C program in Clean C */
+/* The first (1974) C program in sparing Clean C */
 
-#include <stdio.h>
+#include <stdio.h>  // required for puts()
 
 int main(void)
 {
-   puts("hello, world");
-
-   exit(0);
-   }
+    return puts("hello, world");
+    } // main
