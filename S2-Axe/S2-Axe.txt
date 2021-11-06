@@ -1,4 +1,4 @@
-S2-Axe.txt 0.0.3                    UTF-8                         2021-11-05
+S2-Axe.txt 0.0.4                    UTF-8                         2021-11-06
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -20,6 +20,10 @@ MANIFEST
 
     axe_game.c
         the source code as it is evolved in various steps
+
+    rayConfirm.c
+        part of the raylib setup, used to confirm and demonstrate building
+        of a rayli application in conjunction with VS Code usage.
 
     [more TBD]
 
@@ -44,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Axe Game with Native VC Builds. FC_CPP Project
-   text file S2-Axe.txt version 0.0.2 dated 2021-10-20, available on the
+   text file S2-Axe.txt version 0.0.4 dated 2021-11-06, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/S2-Axe.txt>
 
@@ -66,10 +70,16 @@ TODO
   * Explain the edit, build, review, run/test cyle and how we can itterate
     with the command prompt and an editor such as Visual Studio Code.
 
-  * Change the name of wrk/ to cache/ before going any farther
+  * Explain dependence on the raylib 3.7.0 release and needing to reconfirm
+    everything if a release with breaking changes (4.0.0 for one) introduced.
+
+  * Provide a better link to more detail in rayConfirm.c.  Keep in mind that
+    the setup is adaptation of a generic one for native Windows raylib builds.
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2021-11-06T16:46Z Dress up rayConfirm.c and manage TODOs
  0.0.3 2021-11-05T21:42Z Mangle things while fussing with build-windows.bat
  0.0.2 2021-10-20T02:21Z Manage TODOs
  0.0.1 2021-10-18T22:13Z Adjust for companion approach
