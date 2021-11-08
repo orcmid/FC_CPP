@@ -1,18 +1,36 @@
 @echo off
-REM rayAppBuild.bat 0.0.2           UTF-8                         2021-11-07
-REM |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+rem VCrayApp 0.0.0 rayApp.bat 0.0.3 UTF-8                         2021-11-08
+rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-REM Specify your executable name here
-set GAME_EXE=rayConfirm.exe
-REM Set your sources here (relative to rayAppBuild.bat location)
-set SRC=cache\rayConfirm.c
-REM cache\rayConfirm.c is provided with the raylib setup to confirm proper
-REM installation and compilation
+rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
+rem                  =====================================
 
-REM This code depends on the presence of cache/, app/, and ../raylib/
+rem This code depends on the presence of cache\, app\, and ..\raylib\.  It
+rem must be operated from within a VS Command Prompt command-line environment.
+rem Use the script without modification until installation and operation is
+rem confirmed.
 
-REM *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
-REM |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+rem After successful confirmation, substitute your app's .exe name here ...
+SET GAME_EXE=rayConfirm.exe
+
+rem ... and switch to your app's source code location, e.g., SRC=src\*.c ...
+SET SRC=cache\rayConfirm.c
+
+rem rayConfirm.c is compiled as a simple example to confirm the setup.
+
+
+rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
+rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+rem Additional documentation of this procedure and its usage are found in the
+rem accompanying VCrayApp file.  For further information, see
+rem <place-to-be-announced> and check for the latest
+rem version at <the-related-place-to-be-announced>.
+
+rem Designate the semantic-versioned distribution
+SET VCrayApp=0.0.0
+
+
 
 REM Check if Native Command-Line Environment is established.
 REM TODO: CHANGE TO VCBIND STYLE CONFIRMATION <<<<<<<<<<<<<<<<<<<<<
@@ -63,8 +81,9 @@ REM Back to development directory
 cd ..
 echo COMPILE-INFO: All done.
 
-REM |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-REM
-REM 0.0.2 2021-11-07T23:43Z Rename and continue prototyping.
-REM 0.0.1 2021-11-05T21:39Z Trial Simplification for nfoTools + FC_CPP
-REM 0.0.0 2021-04-26T00:01Z 3.7.0 raylib/projects/scripts/build_windows.bat
+rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+rem
+rem 0.0.3 2021-11-08T22:05Z Start blending VCbind on-ramp and guard rails
+rem 0.0.2 2021-11-07T23:43Z Rename and continue prototyping.
+rem 0.0.1 2021-11-05T21:39Z Trial Simplification for nfoTools + FC_CPP
+rem 0.0.0 2021-04-26T00:01Z 3.7.0 raylib/projects/scripts/build_windows.bat
