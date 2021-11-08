@@ -1,4 +1,4 @@
-FC_CPP.txt 0.0.10                    UTF-8                         2021-10-24
+FC_CPP.txt 0.0.11                    UTF-8                         2021-11-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               C++ Fundamentals: Game Programming for Beginners
@@ -17,7 +17,7 @@ FC_CPP.txt 0.0.10                    UTF-8                         2021-10-24
     on Microsoft Windows.  Variations of the Udemy assignments illustrate
     C/C++ programming in clean styles.
 
-    The narration of the companion is at <https://orcmid.github.io/FC_CPP>.
+    The narration of this companion is at <https://orcmid.github.io/FC_CPP>.
 
     There are streamlined Windows and VS Build Tools cases.  The priority
     is Windows first, serving the enormous population of potentially-curious
@@ -106,7 +106,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Orcmid's Windows Companion to FC_CPP.  FC_CPP project
-   text file FC_CPP.txt version 0.0.9 dated 2021-10-20 available on the
+   text file FC_CPP.txt version 0.0.11 dated 2021-11-07 available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/main/FC_CPP.txt>
 
@@ -149,6 +149,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.11 2021-11-07T19:57Z Some smoothing after review
  0.0.10 2021-10-24T15:44Z Manage TODOs
  0.0.9 2021-10-20T02:19Z Manage TODOs
  0.0.8 2021-10-18T17:55Z Initiate change to providing a companion to the
