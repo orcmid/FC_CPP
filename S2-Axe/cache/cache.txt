@@ -1,13 +1,13 @@
-cache.txt 0.0.5                     UTF-8                         2021-10-20
+cache.txt 0.0.6                     UTF-8                         2021-11-08
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
                    ====================================
 
 
-      <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/wrk/wrk.txt>
+      <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/cache/cache.txt>
 
-            DEMONSTRATION OF RAYLIB USAGE IN NATIVE WINDOWS APPS
+            PROTOTYPING OF RAYLIB USAGE IN NATIVE WINDOWS APPS
 
                          S2-AXE RAYLIB CACHE FOLDER
                          --------------------------
@@ -17,12 +17,38 @@ cache.txt 0.0.5                     UTF-8                         2021-10-20
     subsequent build.  They are kept around because they usually do not change
     when the application code is changed and compiled over and over.
 
+    There are additional files manifested here that are part of the setup
+    bundle and should be retained for confirmation of build setup success,
+    especially when using different sources indicates troubles.
+
+    When this folder is extracted from a setup Zip file, the language will
+    be adjusted accordingly.
+
 MANIFEST
 
     cache.txt
         this manifest and job-jar file
     .gitignore
-        excluding the compilation intermediates from any git commits
+        excluding the compilation intermediates and supporting files from
+        any git commits
+
+    rayConfirm.c
+        part of the raylib setup, used to confirm and demonstrate building
+        of a raylib application using VS Build Tools and VS Code.  Once
+        confirmed, rayAppBuild.bat can be adjusted to compile axe_game.exe
+        instead.
+
+    VCoptions.opt
+        C Language compilation options for Visual C/C++ native compiler cl.exe
+        These options must be consistent between cache and app compiles
+
+    raylibCode.opt
+        Option file identifying the raylib modules to be cached
+
+    raylibVars.opt
+        Preprocessor definitions for the compilation of raylib modules.
+
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -45,16 +71,23 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S2-Axe raylib Cache Folder.  FC_CPP project
-   text file wrk.txt version 0.0.5 dated 2021-10-20, available on the
+   text file wrk.txt version 0.0.6 dated 2021-11-07, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/cache/cache.txt>
 
 TODO
 
-  * Juggle having the least that could possibly work here.
+  * Replace this when a Zip-extracted setup provides this folder and the
+    additional configuration files.
+
+  * Include a clean batch file here and have rayAppBuild leave it when the
+    cache materials are not here.  This should probably test the last one
+    that is built and always clear them when that one is missing.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2021-11-08T00:11Z Refactored initial content and options/confirmation
+       files preparatory to streamlining and bundling into a Zipped setup
  0.0.5 2021-10-20T20:16Z Convert for S2-Axe/cache
  0.0.4 2021-10-18T22:36Z Convert for S2-Axe/wrk/
  0.0.3 2021-09-29T18:13Z Reflect rawVC/ change amid still over-thinking

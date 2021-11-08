@@ -1,4 +1,4 @@
-app.txt 0.0.4                       UTF-8                         2021-11-05
+app.txt 0.0.6                       UTF-8                         2021-11-08
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -7,7 +7,7 @@ app.txt 0.0.4                       UTF-8                         2021-11-05
 
      <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/app/app.txt>
 
-            EXPLORATION OF RAYLAB USAGE IN NATIVE WINDOWS APPS
+            PROTOTYPING OF RAYLIB USAGE IN NATIVE WINDOWS APPS
 
                           S2-AXE XCOPY APP FOLDER
                           -----------------------
@@ -24,7 +24,7 @@ app.txt 0.0.4                       UTF-8                         2021-11-05
 
     In zipping up the content of this folder, either selectively zip the
     .exe and any resources/ or zip everything and then remove the files
-    that are not part of the deliverable.
+    from the Zip that are not part of the deliverable.
 
 MANIFEST
 
@@ -33,8 +33,10 @@ MANIFEST
     .gitignore
         excluding user-specific compilations from a cloned repository
         (not deliverable)
-    *.opt
-        option filss used in the build process (not deliverable)
+
+    rayLinking.opt
+        option file used in the linking step for producing the complete
+        .exe of the app (not deliverable)
 
     resources/
         here when provided as a neighbor of the compiled .exe file and to
@@ -46,9 +48,6 @@ MANIFEST
     *.obj
         files that are only transient here and not part of the app package
         (not deliverable)
-
-
-
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -71,21 +70,22 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S2-Axe XCopy App Folder.  Project FC_CPP text file
-   app.txt version 0.0.4 dated 2021-11-05, available on the Internet as a
+   app.txt version 0.0.6 dated 2021-11-08, available on the Internet as a
    version of <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/app/app.txt>
 
 TODO
 
-  * Confirm that executable can be created when compilation is in a sister
-    folder.  Something like /Fe..\app\app.exe
-
   * Determine what the context of options and command line parameters is
-    (more under wrk.txt and also toolcraft)
+   (more under wrk.txt and also toolcraft)
 
   * Add a NOTICE.txt that acknowledges development and construction.
 
+  * That means need a LICENSE.txt file too.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2021-11-08T00:21Z Reflect refactoring in preparation for VCbind-style
+       smoothness.
  0.0.4 2021-11-05T23:18Z Dressing up a bit
  0.0.3 2021-10-18T22:03Z Cloned and adjusted for FC_CPP/S2-Axe/app/
  0.0.2 2021-09-29T18:17Z Reflect change from rawCL/ to rawVC/.

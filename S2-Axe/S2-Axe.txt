@@ -1,4 +1,4 @@
-S2-Axe.txt 0.0.4                    UTF-8                         2021-11-06
+S2-Axe.txt 0.0.5                    UTF-8                         2021-11-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -11,7 +11,7 @@ S2-Axe.txt 0.0.4                    UTF-8                         2021-11-06
                        ------------------------------
 
     This little subproject is for the Axe Game, the initial use of raylib
-    for graphic operations in an FC+CPP Assignment.
+    for graphic operations in an FC_CPP Assignment.
 
 MANIFEST
 
@@ -21,11 +21,20 @@ MANIFEST
     axe_game.c
         the source code as it is evolved in various steps
 
-    rayConfirm.c
-        part of the raylib setup, used to confirm and demonstrate building
-        of a rayli application in conjunction with VS Code usage.
+    rayAppBuild.bat
+        script for building the raylib-dependent application along with the
+        cache of files for integrating the app with the amount of raylib
+        needed
 
-    [more TBD]
+    cache/
+        the folder for raylib object code for linking into the axe_game.c
+        compilation
+
+    app/
+        the folder in which the compiled axe.exe is built.
+
+    .vscode/
+        VS Code setting for C/C++ Intellisense applicable to this folder
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -48,7 +57,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Axe Game with Native VC Builds. FC_CPP Project
-   text file S2-Axe.txt version 0.0.4 dated 2021-11-06, available on the
+   text file S2-Axe.txt version 0.0.5 dated 2021-11-07, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/S2-Axe.txt>
 
@@ -56,7 +65,8 @@ TODO
 
   * Make notes on this section of the class.
 
-  * For S2, use a rawVC variant and refine its usage.
+  * For S2, use a rawVC variant and prototype its usage.  Then switch to
+    introducing this from a rayLab template zip.
 
   * Link to VS Build Tools installation
 
@@ -74,11 +84,19 @@ TODO
     everything if a release with breaking changes (4.0.0 for one) introduced.
 
   * Provide a better link to more detail in rayConfirm.c.  Keep in mind that
-    the setup is adaptation of a generic one for native Windows raylib builds.
+    the setup is prototyping a generic one for native Windows raylib builds.
 
+  * Using the rayAppBuild.bat that I have, start morphing the building to
+    make use of options in the cache/ and app/ folders.
+
+  * rayConfirm.c is under cache/ so it does not clutter the project the setup
+    is included in.  The user will need to modify the rayAppBuild.bat file
+    to find their own source.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2021-11-07T23:54Z Refactor the raylib setup as much as I can until
+       more VCbind-style reporting and trouble-shooting is provided
  0.0.4 2021-11-06T16:46Z Dress up rayConfirm.c and manage TODOs
  0.0.3 2021-11-05T21:42Z Mangle things while fussing with build-windows.bat
  0.0.2 2021-10-20T02:21Z Manage TODOs
