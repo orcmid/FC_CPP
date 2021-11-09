@@ -1,4 +1,4 @@
-app.txt 0.0.6                       UTF-8                         2021-11-08
+app.txt 0.0.6                       UTF-8                         2021-11-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -31,7 +31,8 @@ MANIFEST
     app.txt
         this manifest and job-jar file (not deliverable)
     .gitignore
-        excluding user-specific compilations from a cloned repository
+        excluding some VCrayApp.zip material and compilation results from
+        any Git so that any modifications here are entirely local.
         (not deliverable)
 
     rayLinking.opt
@@ -39,8 +40,8 @@ MANIFEST
         .exe of the app (not deliverable)
 
     resources/
-        here when provided as a neighbor of the compiled .exe file and to
-        be included in the app package (deliverable)
+        here when provided as a neighbor of the compiled .exe file and
+        included in the app package (deliverable)
 
     *.exe
         here as the compiled product (deliverable)
@@ -70,20 +71,22 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S2-Axe XCopy App Folder.  Project FC_CPP text file
-   app.txt version 0.0.6 dated 2021-11-08, available on the Internet as a
+   app.txt version 0.0.76dated 2021-11-09, available on the Internet as a
    version of <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/app/app.txt>
 
 TODO
-
-  * Determine what the context of options and command line parameters is
-   (more under wrk.txt and also toolcraft)
 
   * Add a NOTICE.txt that acknowledges development and construction.
 
   * That means need a LICENSE.txt file too.
 
+  * Any further morphing depends on the final refactoring for inclusion in
+    any VCrayApp.zip
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2021-11-09T03:00Z Complete all refactoring apart from relocation into
+       a VCrayApp.zip on nfoTools
  0.0.5 2021-11-08T00:21Z Reflect refactoring in preparation for VCbind-style
        smoothness.
  0.0.4 2021-11-05T23:18Z Dressing up a bit
