@@ -1,4 +1,4 @@
-cache.txt 0.0.6                     UTF-8                         2021-11-08
+cache.txt 0.0.7                     UTF-8                         2021-11-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -35,8 +35,8 @@ MANIFEST
     rayConfirm.c
         part of the raylib setup, used to confirm and demonstrate building
         of a raylib application using VS Build Tools and VS Code.  Once
-        confirmed, rayAppBuild.bat can be adjusted to compile axe_game.exe
-        instead.
+        confirmed, rayAppBuild.bat can be adjusted to compile the user's
+        raylib project files instead.
 
     VCoptions.opt
         C Language compilation options for Visual C/C++ native compiler cl.exe
@@ -48,7 +48,11 @@ MANIFEST
     raylibVars.opt
         Preprocessor definitions for the compilation of raylib modules.
 
-
+    *.obj
+        Microsoft compiled C Language *.obj modules from compilation of the
+        raylib files identified in raylibCode.opt.  If rglfw.obj is not
+        present, the cache is considered to be incomplete or empty and it
+        will be rebuilt
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -71,7 +75,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S2-Axe raylib Cache Folder.  FC_CPP project
-   text file wrk.txt version 0.0.6 dated 2021-11-07, available on the
+   text file wrk.txt version 0.0.7 dated 2021-11-09, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/cache/cache.txt>
 
@@ -80,12 +84,12 @@ TODO
   * Replace this when a Zip-extracted setup provides this folder and the
     additional configuration files.
 
-  * Include a clean batch file here and have rayAppBuild leave it when the
-    cache materials are not here.  This should probably test the last one
-    that is built and always clear them when that one is missing.
+  * When packaged and extracted via a VCrayApp,zip, rename as an nfoTools
+    product and make the result more-seriously under .gitignore
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2021-11-09T02:47Z Complete refactoring pending nfoTools VCrayApp.zip
  0.0.6 2021-11-08T00:11Z Refactored initial content and options/confirmation
        files preparatory to streamlining and bundling into a Zipped setup
  0.0.5 2021-10-20T20:16Z Convert for S2-Axe/cache
@@ -95,5 +99,4 @@ TODO
  0.0.1 2021-09-28T14:28Z Noodling in TODOs
  0.0.0 2021-09-27T23:13Z placeholder for native-build intermediate materials
 
-
-                          ***** end of wrk.txt *****
+                         ***** end of cache.txt *****
