@@ -1,4 +1,4 @@
-S2-Axe.txt 0.0.7                    UTF-8                         2021-11-09
+S2-Axe.txt 0.0.8                    UTF-8                         2021-11-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -67,8 +67,8 @@ TODO
 
   * Make notes on this section of the class.
 
-  * Continue refining rayApp.bat until it needs to be supplied as a template
-    Zip from nfoTools.
+  * Continue refining rayApp.bat until it is eligible to be supplied as a
+    template Zip from nfoTools.
 
   * Link to VS Build Tools installation
 
@@ -91,17 +91,19 @@ TODO
   * Figure out an appropriate way to unpack and use VCrayApp.zip in setting
     up a raylib-based application.
 
-  * Fix rayApp.bat to be usable from any location, but running where it sits,
-    including switches in and out of cache/ and app/.
-
   * Get straight about the .gitignores.  Maybe there but editable?  These
     are all not part of any clone where VCrayApp.zip is unpacked.  I guess
     I would include them but then they need to be editable here.  Figure out
     how to handle this for novices.
 
+  * Adjust rayApp.bat to confirm the location of raylib since it is not
+    moveable.
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2021-11-10T16:40Z Final touch-ups of rayApp.bat before moving to
+       nfoTools.  Manage TODOs
  0.0.7 2021-11-09T16:01Z Continue refining rayApp.bat, manage TODOs
  0.0.6 2021-11-08T23:53Z First check cycle of the refactoring
  0.0.5 2021-11-07T23:54Z Refactor the raylib setup as much as I can until
