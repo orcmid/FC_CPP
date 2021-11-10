@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 rayApp.bat 0.0.4 UTF-8                         2021-11-08
+rem VCrayApp 0.0.0 rayApp.bat 0.0.5 UTF-8                         2021-11-10
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -8,30 +8,29 @@ rem                  =====================================
 rem This code depends on the presence of cache\, app\, and ..\raylib\.  It
 rem must be operated from within a VS Command Prompt command-line environment.
 rem Use the script without modification until installation and operation is
-rem confirmed.
+rem confirmed.  Then alter the GAME_EXE and SRC vars for the raylib project.
 
 SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
 
+rem rayConfirm.c is compiled as a simple example to confirm the setup.
 rem After successful confirmation, substitute your app's .exe name here ...
 SET GAME_EXE=rayConfirm.exe
 
-rem ... and switch to your app's source code location, e.g., SRC=src\*.c ...
+rem ... and switch to your app's source code location, e.g., SRC=src\*.c
 SET SRC=cache\rayConfirm.c
-
-rem rayConfirm.c is compiled as a simple example to confirm the setup.
 
 
 rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-rem Additional documentation of this procedure and its usage are found in the
-rem accompanying VCrayApp.txt file.  For further information, see
-rem <place-to-be-announced> and check for the latest
-rem version at <the-related-place-to-be-announced>.
-
 rem Designate the semantic-versioned distribution
 SET VCrayApp=0.0.0
+
+rem Additional documentation of this procedure and its usage are found in the
+rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
+rem <place-to-be-announced> and check for the latest
+rem version at <the-related-place-to-be-announced>.
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
 rem     %1 value "+" selects smooth non-stop operation for splicing output
@@ -63,88 +62,126 @@ ECHO:          %~dp0                                                %VCterse%
 rem            reporting script directory location
 
 :LOCATE
+ECHO           %VCterse%
 rem VERIFY LOCATION OF THE SCRIPT WHERE VCRayApp.zip IS FULLY EXTRACTED
+rem Some are customizable, none should be removed, all %VCrayApp% specific
 IF NOT EXIST "%~dp0cache\cache.txt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\rayConfirm.c" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\raylibCode.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\raylibVars.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
+IF NOT EXIST "%~dp0app\rayLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0rayApp.bat" GOTO :FAIL1
 
 rem DETERMINE PARAMETERS
-rem    See :USAGE for the VCbind API contract
+rem    See :USAGE for the rayApp.bat API contract
 IF "%1" == "+" SHIFT /1
 IF "%1" == "?" GOTO :USAGE
 IF "%1" == "*" SHIFT /1
+IF "%1" == "-c" ( SET VCclean=1
+                  SHIFT /1 )
+IF "%1" == "-r" ( SET VCrun=1
+                  SHIFT /1 )
+IF NOT "%1" == "" GOTO FAIL 2
 
-rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-REM Check if Native Command-Line Environment is established.
-REM TODO: CHANGE TO VCBIND STYLE CONFIRMATION <<<<<<<<<<<<<<<<<<<<<
-WHERE cl >nul 2>nul
-IF %ERRORLEVEL% == 0 goto BUILD
-echo "Developer Command-line environment must be set first."
-REM TODO: PROVIDE BETTER HELP ON SETTING ENVIRONMENT <<<<<<<<<<<<<<<<<<<<<
-exit /B
+rem CONFIRM COMMAND-LINE ENVIRONMENT
+IF "%VSCMD_VER%" == "" GOTO FAIL3
+WHERE /Q cl.exe >nul 2>nul
+IF ERRORLEVEL 1 goto FAIL3
+ECHO: [rayApp] Using Tools %VSCMD_VER% for %VSCMD_ARG_TGT_ARCH%     %VCterse%
+ECHO           %VCterse%
 
-:BUILD
-REM For the ! variable notation
-setlocal EnableDelayedExpansion
-REM XXXXXXXXX There seems no need for this
+rem COMPILE INTO THE CACHE IF NEEDED
+IF NOT "%VCclean%" == "1" GOTO :CACHECHECK
+DEL %~dp0cache\rglfw.obj
 
-REM XXXXXXXXX THIS CODE BUILDS EVERYTHING WITH VERBOSITY - FIX VCbind STYLE
+:CACHECHECK
+IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
+DEL %~dp0cache\*.obj > nul 2>nul
 
-REM Flags
-set OUTPUT_FLAG=/Fe: "!GAME_EXE!"
-set SUBSYSTEM_FLAGS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
+SET VCfrom=%CD%
+CD %~dp0cache
+CL.exe /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt         %VCterse%
+IF ERRORLEVEL 2 GOTO :FAIL4
+ECHO: [rayApp] FRESH CACHE OF RAYLIB *.OBJ FILES COMPILED           %VCterse%
+ECHO: %VCterse%
 
+:APPBUILD
+CD %~dp0app
+DEL *.exe >nul 2>nul
+rem Flags
+SET OUTPUT_FLAG=/Fe: "%GAME_EXE%"
+SET SUBSYSTEM_FLAGS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
-REM Display what we're doing
-echo COMPILE-INFO: Cache raylib *.obj files for linking with the app.
+rem Compiling the %SRC%
+CL.exe /W3 /c @~dp0cache\VCoptions.opt %~dp0%SRC%                   %VCterse%
+IF ERRORLEVEL 2 goto :FAIL5
+ECHO: %VCterse%
 
-REM Cache raylib .obj files
+rem Linking it all to %GAME_EXE%
+CL.exe %OUTPUT_FLAG% @rayLinking.opt /link /LTCG %SUBSYSTEM_FLAGS%  %VCterse%
+IF ERRORLEVEL 2 goto :FAIL5
+ECHO: %VCterse%
+DEL *.obj >nul 2>nul
+ECHO: [rayApp] RAYLIB APP %dp0app\%GAME_EXE% COMPILED               %VCterse%
+ECHO: %VCterse%
 
-cd cache
+CD %VCfrom%
+IF NOT "%VCrun%" == "1" GOTO :SUCCESS
+%dp0app\%GAME_EXE%
 
-REM XXXXXXXX Check Result Codes rather than crashing out with Exit
-cl.exe /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt || exit /B
+:SUCCESS
+IF "%VCsplice%" == "+" EXIT /B 0
+IF "%VCterse%" == "" PAUSE
+EXIT /B 0
 
-echo COMPILE-INFO: Raylib object files compiled to: cache\
+:FAIL5
+ECHO: [rayApp] ****FAIL: COMPILING %GAME_EXE% FAILED ****
+ECHO:          Review the errors reported for the compilation, make  %VCterse%
+ECHO:          repairs and reattempt.                                %VCterse%
+ECHO:          RESULTS ARE UNPREDICTABLE                             %VCterse%
+GOTO :BAIL
 
-REM Move to the app directory
-cd ..\app
-del *.exe
+:FAIL4
+ECHO: [rayApp] ****FAIL: COMPILING CACHE OF RAYLIB FILES FAILED ****
+ECHO:          Review the errors reported for the compilation, make  %VCterse%
+ECHO:          repairs and reattempt.                                %VCterse%
+ECHO:          RESULTS ARE UNPREDICTABLE                             %VCterse%
+GOTO :BAIL
 
-REM Build the actual game
-echo COMPILE-INFO: Compiling and linking game code.
+:FAIL3
+ECHO: [rayApp] **** FAIL: NO VS NATIVE COMMAND-LINE ENVIRONMENT ****
+ECHO:          rayApp.bat requires the command-line environment for %VCterse%
+ECHO:          VS Native Build Tools to be already established.     %VCterse%
+ECHO:          See ^<some nfoTools support information^>.           %VCterse%
+ECHO:          NO ACTIONS HAVE BEEN PERFORMED                       %VCterse%
+GOTO :BAIL
 
-cl.exe /W3 /c @..\cache\VCoptions.opt ..\!SRC! || exit /B
-cl.exe !OUTPUT_FLAG! @rayLinking.opt /link /LTCG !SUBSYSTEM_FLAGS! || exit /B
-
-del *.obj
-echo COMPILE-INFO: Game compiled to app\%GAME_EXE%
-
-REM Back to development directory
-cd ..
-echo COMPILE-INFO: All done.
-
+:FAIL2
+ECHO: [rayApp] **** FAIL: UNSUPPORTED RAYAP PARAMETERS ****
+ECHO:          Invalid Here: %*
+ECHO:          %VCterse%
+ECHO:          NO ACTIONS HAVE BEEN PERFORMED                       %VCterse%
+GOTO :USAGE
 
 :FAIL1
-ECHO:          **** FAIL: SCRIPT IS NOT IN THE REQUIRED LOCATION ****
-ECHO:          rayApp.bat must be in the folder that VCbind.zip     %VCterse%
-ECHO:          is extracted into.  VCbind.bat is not designed to be %VCterse%
-ECHO:          separated from the extracted contents of VCbind.zip. %VCterse%
-ECHO:          %VCterse%
-ECHO:          NO ENVIRONMENT CHANGES HAVE BEEN MADE                %VCterse%
-ECHO:          Follow instructions in the VCbind-%VCverNum%.txt     %VCterse%
-ECHO:          file for extracting all of VCbind.zip content to a   %VCterse%
-ECHO:          working location and using the VCbind.bat there. Also%VCterse%
-ECHO:          see ^<http://nfoWare.com/dev/2016/11/d161101.htm^>.  %VCterse%
+ECHO: [rayApp] **** FAIL: INCORRECT VSrayApp FILES CONFIGURATION ****
+ECHO:          rayApp.bat must be in the folder that VCrayApp.zip   %VCterse%
+ECHO:          is extracted into, along with the cache\ and app\    %VCterse%
+ECHO:          subfolders.  The extracted folders and files are not %VCterse%
+ECHO:          supported if separated. See                          %VCterse%
+ECHO:          ^<some nfoTools support information^>.               %VCterse%
+ECHO:          NO ACTIONS HAVE BEEN PERFORMED                       %VCterse%
 GOTO :BAIL
 
 :FAIL0
-ECHO:          **** FAIL: COMMAND SHELL EXTENSIONS REQUIRED ****
+ECHO: [rayApp] **** FAIL: COMMAND SHELL EXTENSIONS REQUIRED ****
 ECHO:          rayApp.bat requires CMDEXTVERSION 2 or greater.       %VCterse%
 ECHO:          This is available everywhere rayApp.bat is usable.    %VCterse%
 ECHO:          %VCterse%
-ECHO:          NO ENVIRONMENT CHANGES HAVE BEEN MADE                 %VCterse%
+ECHO:          NO ACTIONS HAVE BEEN PERFORMED                        %VCterse%
 GOTO :BAIL
 
 :USAGE
@@ -181,6 +218,7 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.5 2021-11-10T00:08Z Complete draft of guard-railed script
 rem 0.0.4 2021-11-08T23:43Z First stage provisional built
 rem 0.0.3 2021-11-08T22:05Z Start blending VCbind on-ramp and guard rails
 rem 0.0.2 2021-11-07T23:43Z Rename and continue prototyping.

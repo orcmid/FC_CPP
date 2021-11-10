@@ -1,4 +1,4 @@
-S2-Axe.txt 0.0.6                    UTF-8                         2021-11-08
+S2-Axe.txt 0.0.7                    UTF-8                         2021-11-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Orcmid's Windows Companion to FC_CPP
@@ -25,7 +25,7 @@ MANIFEST
         script for building the raylib-dependent application along with the
         cache of files for integrating the app with the amount of raylib
         needed
-        VCrayApp-0.0.0.txt
+    VCrayApp-0.0.0.txt
         instructions for setup and use of the rayApp.bat build environment
 
     cache/
@@ -59,7 +59,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Axe Game with Native VC Builds. FC_CPP Project
-   text file S2-Axe.txt version 0.0.5 dated 2021-11-07, available on the
+   text file S2-Axe.txt version 0.0.7 dated 2021-11-09, available on the
    Internet as a version of
    <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/S2-Axe.txt>
 
@@ -67,8 +67,8 @@ TODO
 
   * Make notes on this section of the class.
 
-  * For S2, use a rawVC variant and prototype its usage.  Then switch to
-    introducing this from a rayLab template zip.
+  * Continue refining rayApp.bat until it needs to be supplied as a template
+    Zip from nfoTools.
 
   * Link to VS Build Tools installation
 
@@ -91,9 +91,18 @@ TODO
   * Figure out an appropriate way to unpack and use VCrayApp.zip in setting
     up a raylib-based application.
 
+  * Fix rayApp.bat to be usable from any location, but running where it sits,
+    including switches in and out of cache/ and app/.
+
+  * Get straight about the .gitignores.  Maybe there but editable?  These
+    are all not part of any clone where VCrayApp.zip is unpacked.  I guess
+    I would include them but then they need to be editable here.  Figure out
+    how to handle this for novices.
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2021-11-09T16:01Z Continue refining rayApp.bat, manage TODOs
  0.0.6 2021-11-08T23:53Z First check cycle of the refactoring
  0.0.5 2021-11-07T23:54Z Refactor the raylib setup as much as I can until
        more VCbind-style reporting and trouble-shooting is provided
