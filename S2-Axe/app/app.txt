@@ -1,43 +1,31 @@
-app.txt 0.0.6                       UTF-8                         2021-11-09
+app.txt 0.0.7                       UTF-8                       dh:2021-11-11
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                   Orcmid's Windows Companion to FC_CPP
-                   ====================================
+                    COMPILED RAYAPP APPLICATION FOLDER
+                    ==================================
 
+             RAYAPP.ZIP TEMPLATE FOR RAYLIB NATIVE WINDOWS APPS
 
-     <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/app/app.txt>
-
-            PROTOTYPING OF RAYLIB USAGE IN NATIVE WINDOWS APPS
-
-                          S2-AXE XCOPY APP FOLDER
-                          -----------------------
+                         RAYAPP XCOPY/MSIX APP FOLDER
+                         ----------------------------
 
     The app/ folder is a standard subfolder for a command-line build in the
-    parent (e.g., S2-Axe) folder.  app/ receives the compiled .exe and any
-    accompanying files/folders that are required for usage of the executable
-    program.
+    parent folder.  app/ receives the compiled .exe and any accompanying
+    files/folders that are required to be adjacent to the executable program.
 
-    The folder is amenable to XCopy deployment, or potential use in creating
-    an MSIX distributable.  The app/ folder should be amenable to Zipping up,
-    possibly after removing some scaffolding.  Addition of a README and other
-    user-supporting materials would be handy.
-
-    In zipping up the content of this folder, either selectively zip the
-    .exe and any resources/ or zip everything and then remove the files
-    from the Zip that are not part of the deliverable.
+    The folder is amenable to XCopy deployment and potential use in creating
+    an MSIX distributable.  The app/ folder content is amenable to delivery in
+    a Zip file as well, generally after removing some scaffolding.  Addition
+    of a README and other user-supporting materials would be handy.
 
 MANIFEST
 
     app.txt
-        this manifest and job-jar file (not deliverable)
+        this manifest and job-jar file (not deliverable, customizable)
     .gitignore
-        excluding some VCrayApp.zip material and compilation results from
-        any Git so that any modifications here are entirely local.
-        (not deliverable)
-
-    rayLinking.opt
-        option file used in the linking step for producing the complete
-        .exe of the app (not deliverable)
+        excluding some rayApp.zip material and compilation results from
+        any Git so that modifications here are entirely local.
+        (not deliverable, possibly customized or removed)
 
     resources/
         here when provided as a neighbor of the compiled .exe file and
@@ -48,7 +36,7 @@ MANIFEST
 
     *.obj
         files that are only transient here and not part of the app package
-        (not deliverable)
+        (not deliverable, usually remaining only if a compile fails)
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -70,9 +58,9 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. S2-Axe XCopy App Folder.  Project FC_CPP text file
-   app.txt version 0.0.76dated 2021-11-09, available on the Internet as a
-   version of <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/app/app.txt>
+   Hamilton, Dennis E. rayApp XCopy/MSIX App Folder.  rayApp.zip template
+   app.txt version 0.0.7 dated 2021-11-11, available on the Internet as a
+   version of <to-be-filled-in>
 
 TODO
 
@@ -85,6 +73,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2021-11-11T18:37Z Partial staging for promotion to nfoTools deliverable
  0.0.6 2021-11-09T03:00Z Complete all refactoring apart from relocation into
        a VCrayApp.zip on nfoTools
  0.0.5 2021-11-08T00:21Z Reflect refactoring in preparation for VCbind-style

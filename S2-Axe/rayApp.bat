@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 rayApp.bat 0.0.6 UTF-8                         2021-11-10
+rem VCrayApp 0.0.0 rayApp.bat 0.0.7 UTF-8                         2021-11-11
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -65,7 +65,7 @@ ECHO: [rayApp] %VCrayApp% BUILDING RAYLIB APP WITH VC/C++ TOOLS
 
 IF "%VCsplice%" == "+" GOTO :LOCATE
 ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
-ECHO:          %~dp0                                                %VCterse%
+ECHO:          rayApp.bat at %~dp0                                  %VCterse%
 
 :LOCATE
 rem VERIFY LOCATION OF THE SCRIPT WHERE VCRayApp.zip IS FULLY EXTRACTED
@@ -74,6 +74,7 @@ IF NOT EXIST "%~dp0cache\cache.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\rayConfirm.c" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibCode.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibVars.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\rayLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0app\rayLinking.opt" GOTO :FAIL1
@@ -102,7 +103,7 @@ IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
 DEL %~dp0cache\*.obj > nul 2>nul
 
 CD %~dp0cache
-CL.exe %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
+CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL4
 ECHO: [rayApp] FRESH CACHE OF RAYLIB *.OBJ FILES COMPILED
 ECHO: %VCterse%
@@ -111,16 +112,16 @@ ECHO: %VCterse%
 CD %~dp0app
 DEL *.exe >nul 2>nul
 rem Flags
-SET OUTPUT_FLAG=/Fe: "%GAME_EXE%"
+SET OUT=/Fe: "%GAME_EXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
 rem Compiling the %SRC%
-CL.exe %VChush% /W3 /c @%~dp0cache\VCoptions.opt %~dp0%SRC%          %VCterse%
+CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %~dp0%SRC%          %VCterse%
 IF ERRORLEVEL 2 goto :FAIL5
 ECHO: %VCterse%
 
 rem Linking it all to %GAME_EXE%
-CL.exe %VChush% %OUTPUT_FLAG% @rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
+CL %VChush% %OUT% @%~dp0cache\rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
 IF ERRORLEVEL 2 goto :FAIL5
 ECHO: %VCterse%
 DEL *.obj >nul 2>nul
@@ -217,6 +218,7 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.7 2021-11-11T17:52Z Moving all *.opt files to cache/
 rem 0.0.6 2021-11-10T03:30Z Confirmed and touched-up ready for nfoTools
 rem 0.0.5 2021-11-10T00:08Z Complete draft of guard-railed script
 rem 0.0.4 2021-11-08T23:43Z First stage provisional built
